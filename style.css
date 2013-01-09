@@ -16,12 +16,58 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+.scroll {
+	font-family: 'FranchiseRegular';
+	position: fixed;
+	z-index: 101;
+	bottom: 10px;
+	right: 10px;
+	color: #FFDF00;
+	font-size: 1.2em;
+	-webkit-animation: bounce 1.5s 1s infinite;
+	   -moz-animation: bounce 1.5s 1s infinite;
+	    -ms-animation: bounce 1.5s 1s infinite;
+	     -o-animation: bounce 1.5s 1s infinite;
+	        animation: bounce 1.5s 1s infinite;
+}
+
 a {
 	color: inherit;
 	text-decoration: none;
 	padding-bottom: 2px;
 	border-bottom: 3px solid #AFADAD;
+	-webkit-transition: all 300ms ease;
+	   -moz-transition: all 300ms ease;
+	    -ms-transition: all 300ms ease;
+	     -o-transition: all 300ms ease;
+	        transition: all 300ms ease;
 }
+	a:hover {
+		border-bottom: 3px solid #FFDF00;
+	}
 
 nav {
 	position: fixed;
@@ -31,6 +77,7 @@ nav {
 	width: 100%;
 	height: 60px;
 	line-height: 60px;
+	background: #333333;
 	background: rgba(0, 0, 0, 0.5);
 	text-align: center;
 	border-bottom: 3px solid #AFADAD;
@@ -54,6 +101,9 @@ nav {
 		nav ul li:hover {
 			border-bottom: 3px solid #333333;
 		}
+			nav ul li a:hover {
+				border: none;
+			}
 		nav ul li:last-child {
 			margin-right: 0;
 		}
@@ -120,14 +170,14 @@ section {
 }
 	#portfolio ul li {
 		list-style: none;
-		margin-bottom: 30px;
+		margin-bottom: 60px;
 	}
 		#portfolio ul li img {
 			width: 100%;
 			max-width: 1100px;
 			height: auto;
-			border: 2px solid #333333;    
-			-moz-background-clip: padding; 
+			border: 2px solid #333333;
+			-moz-background-clip: padding;
 			-webkit-background-clip: padding-box;
 			background-clip: padding-box;
 			margin-bottom: 10px;
@@ -156,8 +206,90 @@ section {
 	background: linear-gradient(135deg,  rgba(255,252,252,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffcfc', endColorstr='#cccccc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	border-bottom: none;
-
 }
+	#contact .col {
+		width: 46%;
+		display: inline-block;
+		vertical-align: top;
+	}
+		#contact .about {
+			margin-right: 2%;
+			padding-right: 2%;
+			border-right: 1px solid #333333;
+		}
+	#contact .about img {
+		max-width: 90%;
+		-webkit-transform: rotate(-4deg);
+		   -moz-transform: rotate(-4deg);
+		    -ms-transform: rotate(-4deg);
+		     -o-transform: rotate(-4deg);
+		        transform: rotate(-3deg);
+		-webkit-box-shadow:  0px 6px 0px 0px #10425B;
+        box-shadow:  0px 6px 0px 0px #10425B;
+		border-radius: 20px;
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+	#contact .about p {
+		font-size: 1.2em;
+		line-height: 1.8em;
+		margin-bottom: 2em;
+	}
+	#contact .fn {
+		font-size: 1.4em;
+		margin-bottom: 0.4em;
+	}
+	#contact .email {
+		font-size: 1.1em;
+		line-height: 1.0em;
+		margin-bottom: 3.0em;
+	}
+		#contact .email a {
+			margin-left: 8px;
+			display: inline-block;
+			vertical-align: top;
+		}
+		#contact .email:before {
+			font-size: 1.8em;
+		}
+	.follow li {
+		list-style: none;
+		display: inline-block;
+		font-size: 2.0em;
+		position: relative;
+		margin-right: 8px;
+	}
+		.follow li a {
+			display: block;
+			text-indent: -9999px;
+			border: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+	.icon-twitter:hover {
+		color: #00a0d1;
+	}
+	.icon-stackoverflow:hover {
+		color: #FE7A15;
+	}
+	.icon-googleplus:hover {
+		color: #db4a39;
+	}
+	.icon-github:hover {
+		color: #4183c4;
+	}
+	.icon-vimeo:hover{
+		color: #86c9ef;
+	}
+	.icon-reddit:hover {
+		color: #FF4500;
+	}
+
 
 @media screen and (max-height:600px) {
 	body {

@@ -3,20 +3,22 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Bradley Rosenfeld, Professional Web Developer</title>
+		<script src="html5shiv.js"></script>
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="elusive-webfont.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<nav>
 			<ul>
-				<li class="top"><a href="#top">To the Top</a></li>
+				<li class="top"><a href="#front">To the Top</a></li>
 				<li><a href="#portfolio">Portfolio</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 		<section id="front">
 			<h2>Hi!</h2>
-			<h1>I'm <span class="name">Bradley Rosenfeld</h1>
+			<h1>I'm <span class="name">Bradley Rosenfeld</span></h1>
 			<h3>
 				I'm a
 				<ul class="things">
@@ -40,12 +42,64 @@
 					<p>To make it I mixed just the right amount of HTML5, Javascript, CSS3, and unicorn tears.</p>
 					<a href="https://github.com/BoringCode/HTML5Notes">Github</a>
 				</li>
+				<li>
+					<img src="http://placebox.es/1200/700/">
+					<h2>CWF Homeschool</h2>
+					<p>I created both the backend for teachers, as well as a snazzy website for new families.</p>
+					<p>The backend of the CWF Homeschool website allows families to register for classes and manage their classes.</p>
+					<p>To make it I mixed just the right amount of HTML5, Javascript, CSS3, PHP, MySQL, and Bootstrap.</p>
+					<a href="http://cwfhomeschool.org">CWF Homeschool</a>
+				</li>
 			</ul>
 		</section>
 		<section id="contact">
 			<header>
 				<h1>Get to Know Me</h1>
 			</header>
+			<div class="about col">
+				<img src="avatar-jedi.png" alt="Me, as an amazing programming jedi">
+				<p>When not off saving the galaxy, I am rescuing the web from poorly developed websites.<p>
+				<p>Using my web development powers to turn drab websites into super powered masterpieces of planetary proportions. I am a professional web developer, with a lightsaber! Now where did I put my coffee?</p>
+				<p>Want to hire me to save the galaxy (or just your website)? Contact me today!</p>
+			</div>
+			<div class="contact col">
+				<div class="vcard">
+					<p class="fn">Bradley Rosenfeld</p>
+					<p class="email icon-mail-alt"><a href="mailto:rosenfeld.bradley@gmail.com">Hire Me!</a></p>
+				</div>
+				<ul class="follow">
+					<li class="icon-twitter"><a href="http://twitter.com/BoringCode/" target="_blank">Twitter</a></li>
+					<li class="icon-stackoverflow"><a href="http://stackoverflow.com/users/245909/boringcode" target="_blank">Stack Overflow</a></li>
+					<li class="icon-googleplus"><a href="https://plus.google.com/101665545261298286321/posts" target="_blank">Google Plus</a></li>
+					<li class="icon-github"><a href="http://github.com/BoringCode/" target="_blank">Github</a></li>
+					<li class="icon-vimeo"><a href="https://vimeo.com/bradleyrosenfeld" target="_blank">Vimeo</a></li>
+					<li class="icon-reddit"><a href="http://www.reddit.com/user/BoringCode/" target="_blank">Reddit</a></li>
+				</ul>
+			</div>
 		</section>
+		<div class="scroll icon-arrow-down">Scroll</div>
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script>
+			//on load, check position of document
+			if($(this).scrollTop()>=$('#portfolio').position().top) {
+		        $(".scroll").hide();
+		    }
+			$('a[href^=#]').click(function() {
+				href = $(this).attr("href");
+			    $('html, body').animate({
+			        scrollTop: $( $(this).attr('href') ).offset().top
+			    }, 400, function() {
+			    	location.hash = href;
+			    });
+				return false;
+			});
+			$(document).scroll(function(){
+			    if($(this).scrollTop()>=$('#portfolio').position().top) {
+			        $(".scroll").fadeOut("slow");
+			    } else {
+			    	$(".scroll").fadeIn("slow");
+			    }
+			})
+		</script>
 	</body>
 </html>
