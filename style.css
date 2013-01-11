@@ -162,10 +162,10 @@ section {
 			}
 #portfolio {
 	background-color: #16577D;
-	background-image: url('blueprint-bg.png');
-	background-position: -1px -1px, -1px -1px;
+	background-image: url('images/blueprint-bg.png');
+	background-position: -1px -1px;
 	color: #F4F1F1;
-	text-shadow: 1px 1px 0px black;
+	text-shadow: 1px 1px 0px #092634;
 }
 	#portfolio ul li {
 		list-style: none;
