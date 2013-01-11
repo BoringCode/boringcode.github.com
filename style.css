@@ -42,17 +42,22 @@ body {
 .scroll {
 	font-family: 'FranchiseRegular';
 	position: fixed;
+	display: block;
 	z-index: 101;
 	bottom: 10px;
 	right: 10px;
 	color: #FFDF00;
 	font-size: 1.2em;
+	border-bottom: none;
 	-webkit-animation: bounce 1.5s 1s infinite;
 	   -moz-animation: bounce 1.5s 1s infinite;
 	    -ms-animation: bounce 1.5s 1s infinite;
 	     -o-animation: bounce 1.5s 1s infinite;
 	        animation: bounce 1.5s 1s infinite;
 }
+	.scroll:hover {
+		border-bottom: none;
+	}
 
 a {
 	color: inherit;
