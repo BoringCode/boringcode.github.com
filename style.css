@@ -109,7 +109,7 @@ nav {
 		}
 
 section {
-	min-height: 950px;
+	min-height: 900px;
 	width: 70%;
 	padding: 120px 15%;
 	border-bottom: 4px solid #FFDF00;
@@ -133,6 +133,7 @@ section {
 }
 	#front h1 {
 		font-size: 2.8em;
+		font-weight: normal;
 	}
 	.name {
 		font-family: 'FranchiseRegular';
@@ -161,16 +162,14 @@ section {
 			}
 #portfolio {
 	background-color: #16577D;
-	background-image: -webkit-linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), -webkit-linear-gradient(0deg, rgba(255,255,255,.1) 1px, transparent 1px);
-	background-image: linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px);
-	background-size: 10px 10px, 10px 10px;
+	background-image: url('blueprint-bg.png');
 	background-position: -1px -1px, -1px -1px;
 	color: #F4F1F1;
 	text-shadow: 1px 1px 0px black;
 }
 	#portfolio ul li {
 		list-style: none;
-		margin-bottom: 60px;
+		margin-bottom: 80px;
 	}
 		#portfolio ul li img {
 			width: 100%;
@@ -218,7 +217,7 @@ section {
 			border-right: 1px solid #333333;
 		}
 	#contact .about img {
-		max-width: 90%;
+		max-width: 60%;
 		-webkit-transform: rotate(-4deg);
 		   -moz-transform: rotate(-4deg);
 		    -ms-transform: rotate(-4deg);
@@ -242,7 +241,6 @@ section {
 	}
 	#contact .email {
 		font-size: 1.1em;
-		line-height: 1.0em;
 		margin-bottom: 3.0em;
 	}
 		#contact .email a {
@@ -289,6 +287,9 @@ section {
 	.icon-reddit:hover {
 		color: #FF4500;
 	}
+	.icon-skype:hover {
+		color: #00aff0;
+	}
 
 
 @media screen and (max-height:600px) {
@@ -311,14 +312,17 @@ section {
 		margin-top: 0;
 	}
 }
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 900px) {
+	body {
+		font-size: 90%;
+	}
 	section {
 		width: 92%;
 		padding-left: 4%;
 		padding-right: 4%;
 	}
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 660px) {
 	body {
 		font-size: 75%;
 	}
@@ -329,6 +333,11 @@ section {
 			margin-right: 10px;
 		}
 }
+@media screen and (max-width: 550px) {
+	#front h1 span {
+		display: block;
+	}
+}
 @media screen and (max-width: 325px) {
 	nav ul li {
 		margin-right: 5px;
@@ -336,4 +345,14 @@ section {
 	nav ul li a {
 		padding: 0 4px;
 	}
+	#contact .col {
+		display: block;
+		border-right: none;
+		width: 100%;
+		margin: 0;
+	}
+		#contact .about {
+			border-bottom: 1px solid #333333;
+			margin-bottom: 20px;
+		}
 }
