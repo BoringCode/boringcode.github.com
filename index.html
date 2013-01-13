@@ -113,7 +113,6 @@
 		<script>
 			//if the hash changes, highlight the current href
 			$("nav a[href=" + window.location.hash + "]").parent().addClass("current");
-
 			//on load, check position of document
 			if($(this).scrollTop()>=$('#portfolio').position().top) {
 		        $(".scroll").hide();
@@ -136,9 +135,10 @@
 			        'bottom' : $(this.hash).offset().top + $(this.hash).outerHeight()
 			    });
 			});
+			//scrolling
 			$(window).scroll(function() {
 			    for(var i = 0; i < sections.length; i++) {
-			        if($(window).scrollTop() >= sections[i].top * 0.9 && $(window).scrollTop() <= sections[i].bottom) {
+			        if($(window).scrollTop() >= sections[i].top && $(window).scrollTop() <= sections[i].bottom) {
 			            sections[i].link.addClass('current').siblings().removeClass('current');
 			        }
 			    }

@@ -311,7 +311,7 @@ footer {
 }
 
 /*height media queries*/
-@media screen and (max-height:600px) {
+@media screen and (max-height: 768px) {
 	body {
 		font-size: 85%;
 	}
