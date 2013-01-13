@@ -302,7 +302,8 @@ section {
 @media screen and (max-height: 500px) {
 	section {
 		min-height: 420px;
-		padding: 40px 15%;
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 	#front h2 {
 		margin-top: 0;
@@ -313,7 +314,6 @@ section {
 		font-size: 90%;
 	}
 	section {
-		width: 92%;
 		padding-left: 4%;
 		padding-right: 4%;
 	}
