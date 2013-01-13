@@ -33,9 +33,9 @@
 				<li>
 					<img src="images/portfolio/html5-notes.png">
 					<h2>HTML5Notes</h2>
-					<p>I made this for the <a href="https://developer.mozilla.org/en-US/demos/devderby/2012/december">December Mozilla Dev Derby</a> as a fun project.</p>
+					<p>I made this for the <a href="https://developer.mozilla.org/en-US/demos/devderby/2012/december" target="_blank">December Mozilla Dev Derby</a> as a fun project.</p>
 					<p>To make it I mixed just the right amount of HTML5, Javascript, CSS3, and unicorn tears.</p>
-					<a href="https://github.com/BoringCode/HTML5Notes">Github</a>
+					<a href="https://github.com/BoringCode/HTML5Notes" target="_blank">Github</a>
 				</li>
 				<li>
 					<img src="images/portfolio/cwfhomeschool.png">
@@ -43,14 +43,39 @@
 					<p>I created both the backend for teachers, as well as a snazzy website for new families.</p>
 					<p>The backend of the CWF Homeschool website allows families to register for classes and manage their classes.</p>
 					<p>To make it I mixed just the right amount of HTML5, Javascript, CSS3, PHP, MySQL, and Bootstrap.</p>
-					<a href="http://cwfhomeschool.org">CWF Homeschool</a>
+					<a href="http://cwfhomeschool.org" target="_blank">CWF Homeschool</a>
+				</li>
+				<li>
+					<img src="images/portfolio/russell4coroner.png">
+					<h2>Russell4Coroner</h2>
+					<p>I created a full Wordpress solution for a friend of mine who was running for Coroner.</p>
+					<p>Responsive design played a major role in creating the site as it needed to work well on all devices.</p>
+					<p>Created with HTML5, CSS3, and Wordpress.</p>
 				</li>
 				<li>
 					<img src="images/portfolio/IloveTU.png">
 					<h2>Bradley Rosenfeld loves TU!</h2>
 					<p>A fun micro site to show my love for my university.</p>
 					<p>Lovingly created with HTML5 and CSS3.</p>
-					<a href="http://cse.taylor.edu/~brosenfe/">Bradley Rosenfeld loves TU!</a>
+					<a href="http://cse.taylor.edu/~brosenfe/" target="_blank">Bradley Rosenfeld loves TU!</a>
+				</li>
+				<li>
+					<img src="images/portfolio/tripledare-contest.png">
+					<h2>CSS Off 2012</h2>
+					<p>This was my epic entry for the <a href="http://unmatchedstyle.com/cssoff/">Unmatched Style CSS Off 2012</a>.</p>
+					<p>I didn't win, but I did get a chance to test my programming skills with a really nice looking design.</p>
+					<p class="fine-print">Programming by me, the design was provided by the contest.</p>
+					<a href="http://dl.dropbox.com/u/6810599/CSSOFF2011/HTML/index.html" target="_blank">CSS Off 2012 Entry</a>
+				<li class="firefox-addons">
+					<h2>Addons</h2>
+					<ul>
+						<li><a href="https://addons.mozilla.org/en-US/firefox/addon/translate-this/" target="_blank">Translate This!</a></li>
+						<li><a href="https://addons.mozilla.org/en-US/firefox/addon/user-agent-quick-switch/" target="_blank">User Agent Quick Switch</a></li>
+						<li><a href="https://addons.mozilla.org/en-US/firefox/addon/copy-googl-url/" target="_blank">Copy goo.gl URL</a></li>
+						<li><a href="https://addons.mozilla.org/en-US/firefox/addon/open-doc-in-google-docs-viewer/" target="_blank">Open in Google Docs Viewer</a></li>
+						<li><a href="https://addons.mozilla.org/en-US/firefox/addon/copy-plain-text-jetpack/" target="_blank">Copy Plain Text - Jetpack</a></li>
+						<li><a href="https://addons.mozilla.org/en-US/firefox/addon/fireballed/" target="_blank">Fireballed</a></li>
+					</ul>
 				</li>
 			</ul>
 		</section>
@@ -86,6 +111,9 @@
 		<a class="scroll icon-arrow-down" href="#portfolio">Scroll</a>
 		<script src="http://code.jquery.com/jquery.min.js"></script>
 		<script>
+			//if the hash changes, highlight the current href
+			$("nav a[href=" + window.location.hash + "]").parent().addClass("current");
+
 			//on load, check position of document
 			if($(this).scrollTop()>=$('#portfolio').position().top) {
 		        $(".scroll").hide();
@@ -99,11 +127,23 @@
 			    });
 				return false;
 			});
-			$(document).scroll(function(){
-			    if($(this).scrollTop()>=$('#portfolio').position().top) {
-			        $(".scroll").fadeOut("slow");
-			    } else {
-			    	$(".scroll").fadeIn("slow");
+			var sections = [];
+			$('nav a').each(function() {
+			    var section = $(this.hash).offset()
+			    sections.push({
+			        'link':$(this).parent(),
+			        'top' : $(this.hash).offset().top,
+			        'bottom' : $(this.hash).offset().top + $(this.hash).outerHeight()
+			    });
+			});
+			$(window).scroll(function() {
+			    for(var i = 0; i < sections.length; i++) {
+			        if($(window).scrollTop() >= sections[i].top * 0.9 && $(window).scrollTop() <= sections[i].bottom) {
+			            sections[i].link.addClass('current').siblings().removeClass('current');
+			        }
+			    }
+			    if($(this).scrollTop() >= $('#portfolio').position().top) {
+			        $(".scroll").hide();
 			    }
 			})
 		</script>
