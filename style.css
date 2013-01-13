@@ -333,6 +333,9 @@ footer {
 			margin-top: 30px;
 			margin-bottom: 50px;
 		}
+		#portfolio > ul > li {
+			margin-bottom: 50px;
+		}
 	#front h2 {
 		margin-top: 0;
 	}
