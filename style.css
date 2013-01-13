@@ -393,7 +393,7 @@ only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
 	#portfolio .firefox-addons h2 {
-		background-image: url("images/firefox-logo-pixel-doubled.png");
+		/*background-image: url("images/firefox-logo-pixel-doubled.png");*/
 		background-size: 100px 105px;
 	}
 }
