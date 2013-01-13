@@ -137,11 +137,15 @@
 			});
 			//scrolling
 			$(window).scroll(function() {
-			    for(var i = 0; i < sections.length; i++) {
-			        if($(window).scrollTop() >= sections[i].top && $(window).scrollTop() <= sections[i].bottom) {
-			            sections[i].link.addClass('current').siblings().removeClass('current');
-			        }
-			    }
+			    $("section").each(function() {
+			    	elemTop = $(this).offset().top;
+			    	elemBottom = $(this).offset().top + $(this).outerHeight();
+			    	scrollTop = $(window).scrollTop();
+			    	id = $(this).attr("id");
+			    	if (scrollTop >= elemTop && scrollTop <= elemBottom) {
+			    		$("nav a[href=#" + id + "]").parent().addClass("current").siblings().removeClass("current");
+			    	}
+			    })
 			    if($(this).scrollTop() >= $('#portfolio').position().top) {
 			        $(".scroll").hide();
 			    } else {
