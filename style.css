@@ -113,7 +113,6 @@ nav {
 
 section {
 	min-height: 900px;
-	width: 70%;
 	padding: 120px 15%;
 	border-bottom: 4px solid #FFDF00;
 	-webkit-transition: all 300ms ease-in-out;
@@ -160,9 +159,6 @@ section {
 			#front h3 ul {
 				display: inline-block;
 			}
-			#front h3 ul li {
-				display: inline-block;
-			}
 #portfolio {
 	background-color: #16577D;
 	background-image: url('images/blueprint-bg.png');
@@ -178,10 +174,7 @@ section {
 			width: 100%;
 			max-width: 1100px;
 			height: auto;
-			border: 2px solid #333333;
-			-moz-background-clip: padding;
-			-webkit-background-clip: padding-box;
-			background-clip: padding-box;
+			border: 2px solid #FFDF00;
 			margin-bottom: 10px;
 		}
 		#portfolio ul li h2 {
@@ -220,7 +213,7 @@ section {
 			border-right: 1px solid #333333;
 		}
 	#contact .about img {
-		max-width: 60%;
+		max-width: 50%;
 		-webkit-transform: rotate(-4deg);
 		   -moz-transform: rotate(-4deg);
 		    -ms-transform: rotate(-4deg);
