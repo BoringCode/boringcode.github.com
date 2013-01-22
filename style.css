@@ -202,6 +202,9 @@ section {
 				font-size: 1em;
 				margin-bottom: 6px;
 			}
+			#portfolio .firefox-addons p {
+				margin-left: 110px;
+			}
 		#portfolio ul li .fine-print {
 			font-size: 0.8em;
 			font-style: italic;
@@ -303,13 +306,11 @@ section {
 	.icon-skype:hover {
 		color: #00aff0;
 	}
-
 footer {
 	font-size: 70%;
 	position: absolute;
-	bottom: 3%;
+	bottom: 4%;
 }
-
 /*height media queries*/
 @media screen and (max-height: 768px) {
 	body {
