@@ -1,14 +1,13 @@
 @font-face {
+  src:url('fonts/Elusive-Icons.ttf') format('truetype');
+  src:url('fonts/Elusive-Icons.svg#Elusive-Icons') format('svg');
+  src:url('fonts/Elusive-Icons.eot') format('opentype');
+  src:url('fonts/Elusive-Icons.eot?#iefix') format('embedded-opentype');
+  src:url('fonts/Elusive-Icons.woff') format('woff');
   font-family: 'Elusive-Icons';
-  src:url('fonts/Elusive-Icons.eot');
-  src:url('fonts/Elusive-Icons.eot?#iefix') format('embedded-opentype'),
-    url('fonts/Elusive-Icons.svg#Elusive-Icons') format('svg'),
-    url('fonts/Elusive-Icons.woff') format('woff'),
-    url('fonts/Elusive-Icons.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   font-family: 'Elusive-Icons';
@@ -25,8 +24,6 @@
        -o-transition: all 300ms ease;
           transition: all 300ms ease;
 }
-
-
 .icon-zoom-out:before             { content: "\e000"; }
 .icon-zoom-in:before              { content: "\e001"; }
 .icon-youtube:before              { content: "\e002"; }
