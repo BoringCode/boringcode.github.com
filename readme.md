@@ -1,6 +1,6 @@
-Hi
+_Hi_
 #I'm Bradley Rosenfeld
-and I am a web developer, geek, tweeter, and programmer of things
+_I'm a [Web Developer](http://boringcode.github.com/#portfolio), Geek, [Tweeter](http://boringcode.github.com/#contact), and Programmer of things_
 
 ---------------------------------------
 
