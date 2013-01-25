@@ -327,6 +327,7 @@ footer {
 	font-size: 70%;
 	margin-top: 8em;
 }
+
 /*height media queries*/
 @media screen and (max-height: 768px) {
 	body {
