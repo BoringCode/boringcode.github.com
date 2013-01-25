@@ -43,11 +43,11 @@ body {
 	color: #FFDF00;
 	font-size: 1.2em;
 	border-bottom: none;
-	-webkit-animation: bounce 1.5s 0.5s infinite;
-	   -moz-animation: bounce 1.5s 0.5s infinite;
-	    -ms-animation: bounce 1.5s 0.5s infinite;
-	     -o-animation: bounce 1.5s 0.5s infinite;
-	        animation: bounce 1.5s 0.5s infinite;
+	-webkit-animation: bounce 1.5s 0.5s 2;
+	   -moz-animation: bounce 1.5s 0.5s 2;
+	    -ms-animation: bounce 1.5s 0.5s 2;
+	     -o-animation: bounce 1.5s 0.5s 2;
+	        animation: bounce 1.5s 0.5s 2;
 }
 	.scroll:hover {
 		border-bottom: none;
