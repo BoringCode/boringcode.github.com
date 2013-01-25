@@ -154,7 +154,7 @@ section {
 			}
 #portfolio {
 	background-color: #16577D;
-	background-image: url('images/blueprint-bg.png');
+	background-image: url('../images/blueprint-bg.png');
 	background-position: -1px -1px;
 	color: #F4F1F1;
 	text-shadow: 1px 1px 0px #092634;
@@ -187,7 +187,7 @@ section {
 			display: inline-block;
 		}
 		#portfolio .firefox-addons h2 {
-			background-image: url("images/firefox-logo.png");
+			background-image: url("../images/firefox-logo.png");
 			background-repeat: no-repeat;
 			padding-left: 110px;
 			height: 100px;
@@ -411,7 +411,7 @@ only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
 	#portfolio .firefox-addons h2 {
-		background-image: url("images/firefox-logo-pixel-doubled.png");
+		background-image: url("../images/firefox-logo-pixel-doubled.png");
 		background-size: 100px 105px;
 	}
 }
