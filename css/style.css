@@ -106,7 +106,7 @@ nav {
 		}
 section {
 	min-height: 880px;
-	padding: 120px 15%;
+	padding: 110px 15%;
 	border-bottom: 4px solid #FFDF00;
 	position: relative;
 	-webkit-transition: all 300ms ease-in-out;
@@ -117,7 +117,7 @@ section {
 }
 	section header {
 		font-size: 1.6em;
-		margin-bottom: 80px;
+		margin-bottom: 50px;
 	}
 #front {
 	background-color: #333333;
@@ -141,7 +141,7 @@ section {
 		font-style: italic;
 	}
 		#front h2 {
-			margin-top: 20%;
+			margin-top: 24%;
 			font-size: 1.6em;
 		}
 		#front h3 {
@@ -178,12 +178,12 @@ section {
 			margin-bottom: 10px;
 		}
 		#portfolio ul li p {
-			font-size: 1.2em;
+			font-size: 1.25em;
 			line-height: 1.8em;
+			margin-bottom: 0.4em;
 		}
 		#portfolio ul li > a {
 			font-size: 1.4em;
-			margin-top: 10px;
 			display: inline-block;
 		}
 		#portfolio .firefox-addons h2 {

@@ -1,9 +1,9 @@
 @font-face {
   src:url('../fonts/Elusive-Icons.ttf') format('truetype');
   src:url('../fonts/Elusive-Icons.svg#Elusive-Icons') format('svg');
-  src:url('..fonts/Elusive-Icons.eot') format('opentype');
-  src:url('..fonts/Elusive-Icons.eot?#iefix') format('embedded-opentype');
-  src:url('..fonts/Elusive-Icons.woff') format('woff');
+  src:url('../fonts/Elusive-Icons.eot') format('opentype');
+  src:url('../fonts/Elusive-Icons.eot?#iefix') format('embedded-opentype');
+  src:url('../fonts/Elusive-Icons.woff') format('woff');
   font-family: 'Elusive-Icons';
   font-weight: normal;
   font-style: normal;
