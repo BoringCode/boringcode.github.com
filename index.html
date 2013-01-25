@@ -157,10 +157,10 @@
 			    		$("nav a[href=#" + id + "]").parent().addClass("current").siblings().removeClass("current");
 			    	}
 			    })
-			    if($(this).scrollTop() >= $('#portfolio').position().top) {
-			        $(".scroll").fadeOut("slow");
+			    if($(this).scrollTop() >= 200) {
+			        $(".scroll").fadeOut(400);
 			    } else {
-			    	$(".scroll").fadeIn("slow");
+			    	$(".scroll").fadeIn(400);
 			    }
 			})
 		</script>
