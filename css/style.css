@@ -184,6 +184,7 @@ section {
 		}
 		#portfolio ul li > a {
 			margin-top: 0.8em;
+			margin-right: 0.8em;
 			font-size: 1.5em;
 			display: inline-block;
 		}
