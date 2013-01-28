@@ -6,5 +6,4 @@ _I'm a [Web Developer](http://bradleyrosenfeld.com/#portfolio), Geek, [Human](ht
 
 This is my website, dig it?
 
-
 &copy; Bradley Rosenfeld

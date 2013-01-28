@@ -175,15 +175,16 @@ section {
 		}
 		#portfolio ul li h2 {
 			font-size: 1.8em;
-			margin-bottom: 10px;
+			margin-bottom: 0.8em;
 		}
 		#portfolio ul li p {
 			font-size: 1.25em;
-			line-height: 1.8em;
-			margin-bottom: 0.4em;
+			line-height: 1.4em;
+			margin-bottom: 0.6em;
 		}
 		#portfolio ul li > a {
-			font-size: 1.4em;
+			margin-top: 0.8em;
+			font-size: 1.5em;
 			display: inline-block;
 		}
 		#portfolio .firefox-addons h2 {
