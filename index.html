@@ -148,10 +148,10 @@
 			});
 			//scrolling
 			$(window).scroll(function() {
+				scrollTop = $(window).scrollTop();
 			    $("section").each(function() {
 			    	elemTop = $(this).offset().top;
-			    	elemBottom = $(this).offset().top + $(this).outerHeight();
-			    	scrollTop = $(window).scrollTop();
+			    	elemBottom = elemTop + $(this).outerHeight();
 			    	id = $(this).attr("id");
 			    	if (scrollTop >= elemTop && scrollTop <= elemBottom) {
 			    		$("nav a[href=#" + id + "]").parent().addClass("current").siblings().removeClass("current");
