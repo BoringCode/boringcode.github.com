@@ -126,6 +126,42 @@ section {
 	z-index: 101;
 	font-size: 180%;
 }
+	/*someday, maybe*/
+	.april-fools #front {
+		background: #1e5799; /* Old browsers */
+		background: -moz-linear-gradient(left,  #1e5799 0%, #e82eb0 17%, #7c1717 33%, #659e55 59%, #d0e023 81%, #4b4d8c 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1e5799), color-stop(17%,#e82eb0), color-stop(33%,#7c1717), color-stop(59%,#659e55), color-stop(81%,#d0e023), color-stop(100%,#4b4d8c)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left,  #1e5799 0%,#e82eb0 17%,#7c1717 33%,#659e55 59%,#d0e023 81%,#4b4d8c 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left,  #1e5799 0%,#e82eb0 17%,#7c1717 33%,#659e55 59%,#d0e023 81%,#4b4d8c 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left,  #1e5799 0%,#e82eb0 17%,#7c1717 33%,#659e55 59%,#d0e023 81%,#4b4d8c 100%); /* IE10+ */
+		background: linear-gradient(to right,  #1e5799 0%,#e82eb0 17%,#7c1717 33%,#659e55 59%,#d0e023 81%,#4b4d8c 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#4b4d8c',GradientType=1 ); /* IE6-9 */
+		-webkit-animation: eyebleed 20s ease infinite alternate;
+		   -moz-animation: eyebleed 20s ease infinite alternate;
+		    -ms-animation: eyebleed 20s ease infinite alternate;
+		     -o-animation: eyebleed 20s ease infinite alternate;
+		        animation: eyebleed 20s ease infinite alternate;
+	}
+		@-webkit-keyframes eyebleed {
+			0% { background-position: 0; }
+			100% { background-position: 12000px; }
+		}
+		@-moz-keyframes eyebleed {
+			0% { background-position: 0; }
+			100% { background-position: 12000px; }
+		}
+		@-ms-keyframes eyebleed {
+			0% { background-position: 0; }
+			100% { background-position: 12000px; }
+		}
+		@-o-keyframes eyebleed {
+			0% { background-position: 0; }
+			100% { background-position: 12000px; }
+		}
+		@keyframes eyebleed {
+			0% { background-position: 0; }
+			100% { background-position: 12000px; }
+		}
 	#front h1 {
 		font-size: 2.8em;
 		font-weight: normal;
