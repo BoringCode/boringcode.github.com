@@ -176,15 +176,17 @@
 			//april fools! Everyone loves kittens right?
 			var url = "http://placekitten.com/";
 			$("img").each(function() {
-				var orig = $(this).attr("src");
-				var height = $(this).innerHeight();
-				var width = $(this).innerWidth();
-				$(this).attr("src", url + width + "/" + height);
-				$(this).hover(function() {
-					$(this).attr("src", orig);
-				}, function() {
+				$(this).load(function() {
+					var orig = $(this).attr("src");
+					var height = $(this).innerHeight();
+					var width = $(this).innerWidth();
 					$(this).attr("src", url + width + "/" + height);
-				});
+					$(this).hover(function() {
+						$(this).attr("src", orig);
+					}, function() {
+						$(this).attr("src", url + width + "/" + height);
+					});
+				})
 			})
 		</script>
 	</body>
