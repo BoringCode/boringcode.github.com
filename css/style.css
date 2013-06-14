@@ -257,8 +257,6 @@ section {
 				font-size: 2.8em;
 				vertical-align: middle;
 				margin-right: 12px;
-				position: relative;
-				top: 0.1em;
 			}
 			#portfolio .find-more-github:hover {
 				color: white;
@@ -308,13 +306,14 @@ section {
 		margin-bottom: 0.4em;
 	}
 	#contact .email {
-		font-size: 1.1em;
+		font-size: 1.4em;
 		margin-bottom: 3.0em;
 	}
 		#contact .email a {
 			margin-left: 8px;
 			display: inline-block;
-			vertical-align: top;
+			line-height: 1.2em;
+			vertical-align: middle;
 		}
 		#contact .email:before {
 			font-size: 1.8em;
@@ -361,10 +360,23 @@ section {
 	.icon-skype:hover {
 		color: #00aff0;
 	}
+	.icon-comment:hover {
+		color: #fcd20b;
+	}
+	.icon-forrst:hover {
+		color: #5b9a68;
+	}
 footer {
-	font-size: 70%;
-	margin-top: 8em;
+	padding: 70px 15% 40px 15%;
+	background-color: #333333;
+	color: white;
+	text-align: center;
 }
+	footer .icon-rocket {
+		display: block;
+		font-size: 4.0em;
+		color: #FFDF00;
+	}
 
 /*height media queries*/
 @media screen and (max-height: 768px) {
