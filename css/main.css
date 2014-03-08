@@ -7,34 +7,76 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'FranchiseRegular';
+  src: url('../fonts/franchise-bold-webfont.eot');
+  src: url('../fonts/franchise-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/franchise-bold-webfont.woff') format('woff'),
+       url('../fonts/franchise-bold-webfont.ttf') format('truetype'),
+       url('../fonts/franchise-bold-webfont.svg#FranchiseRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .wrap {
   max-width: 920px;
   width: 100%;
   margin: auto;
 }
 
+body {
+  color: #333333;
+  font-size: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bitter', serif;
+}
+
 body > header {
-  border-bottom: 2px solid black;
-  padding: 10px 20px;
+  border-bottom: 3px solid #841118;
+  padding: 20px 10px;
+  background: #EFEEEE;
+  position: relative;
 }
   body > header .name {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: 40%;
     margin-right: -4px;
   }
+    body > header .name h1 {
+      font-size: 2.8em;
+      line-height: 0.9em;
+      color: #16577d;
+      font-family: 'FranchiseRegular';
+      font-weight: normal;
+    }
+    body > header .name h2 {
+      font-family: 'Bitter', serif;
+      font-style: italic;
+      font-size: 1.2em;
+      line-height: 1em;
+      font-weight: normal;
+    }
   body > header nav {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: 60%;
     text-align: right;
+    font-size: 1.1em;
   }
     body > header nav li {
       display: inline-block;
-      vertical-align: top;
+      vertical-align: middle;
       list-style: none;
       margin-left: 20px;
     }
-    body > header nav a {
+    body > header a {
+      color: inherit;
       text-decoration: none;
     }
+      body > header nav a:hover, body > header nav .current a {
+        color: #16577D;
+      }
