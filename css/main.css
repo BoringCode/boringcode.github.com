@@ -1,0 +1,40 @@
+/*reset*/
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrap {
+  max-width: 920px;
+  width: 100%;
+  margin: auto;
+}
+
+body > header {
+  border-bottom: 2px solid black;
+  padding: 10px 20px;
+}
+  body > header .name {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    margin-right: -4px;
+  }
+  body > header nav {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    text-align: right;
+  }
+    body > header nav li {
+      display: inline-block;
+      vertical-align: top;
+      list-style: none;
+      margin-left: 20px;
+    }
+    body > header nav a {
+      text-decoration: none;
+    }

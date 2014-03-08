@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.name }} - {{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <div class="name">
+          <h1>Bradley Rosenfeld</h1>
+          <h2>Professional Web Developer</h2>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/work/">Work</a</li>
+            <li><a href="/writing/">Writing</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </nav>
+      </div>
+    </header>
+    <section>
+      {% if page.info %}
+      <header>
+        <div class="wrap">
+          <h2>{% if page.tagline %}
+            {{ page.tagline }}
+          {% else %}
+            {{ page.title }}
+          {% endif %}</h2>
+          <p>{{ page.info }}</p>
+        </div>
+        <img src="{{ page.headerImg }}">
+      </header>
+      {% endif %}
+      {{ content }}
+    </section>
+    <footer>
+      <h2>Bradley Rosenfeld</h2>
+      <p>CONTACT ME</p>
+    </footer>
+  </body>
+</html>
