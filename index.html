@@ -1,0 +1,35 @@
+---
+layout: default
+title: Professional Web Developer
+tagline: Hi, I'm Bradley Rosenfeld
+info: I'm a web developer, human, and programmer of things
+headerImg: http://test.com/test.png
+---
+<div class="preview portfolio">
+	<div class="wrap">
+		<h3>Recent Work</h3>
+		<ul class="portfolio-items">
+			{% for item in site.data.portfolio limit: 3 %}
+				<li>
+					<img src="/assets/portfolio/{{item.name}}.png">
+					<h3>{{item.name}}</h3>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+<div class="preview blog">
+	<h3 class="wrap">Latest Writing</h3>
+	<article>
+		{% for post in site.posts limit: 1 %}
+		<div class="wrap">
+			<h4>{{ post.title }}</h4>
+			<p>{{ post.excerpt | markdownify }}</p>
+			<a href="{{ post.url }}">Read More...</a>
+		</div>
+		<img src="{{ post.img }}" class="pop-left">
+		{% endfor %}
+	</article>
+</div>
+
+
