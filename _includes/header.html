@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.name }} - {{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body class="page-{{ page.layout | downcase }}">
+    <header>
+      <div class="wrap">
+        <div class="name">
+          <h1><a href="/">Bradley Rosenfeld</a></h1>
+          <h2><a href="/">Professional Web Developer</a></h2>
+        </div>
+        <nav>
+          <ul>
+            {% for link in site.navigation %}
+              {% assign current = nil %}
+              {% if page.url == link.url or page.layout == link.layout %}
+                {% assign current = 'current' %}
+              {% endif %}
+              <li class="{{ current }}">
+                <a href="{{ link.url }}">{{ link.text }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </header>

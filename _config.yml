@@ -2,3 +2,11 @@ name: Bradley Rosenfeld
 markdown: redcarpet
 pygments: false
 permalink: pretty
+navigation:
+- text: Work
+  url: /work/
+- text: Writing
+  url: /writing/
+  layout: post
+- text: Contact
+  url: /contact/

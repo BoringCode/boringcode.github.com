@@ -1,0 +1,26 @@
+---
+layout: default
+title: Work
+info: I make all sorts of stuff!
+headerImg: http://test.com/test.png
+---
+<ul class="portfolio-items">
+{% for item in site.data.portfolio %}
+	{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+	<li>
+		{% if thecycle == 'odd' %}
+			<img src="/assets/portfolio/{{item.name}}.png" class="pop-left">
+		{% endif %}
+		<div class="info">
+			<h3>{{item.name}}</h3>
+			{{ item.url | markdownify }}
+			{{ item.info | markdownify }}
+		</div>
+		{% if thecycle == 'even' %}
+			<img src="/assets/portfolio/{{item.name}}.png" class="pop-right">
+		{% endif %}
+	</li>
+{% endfor %}
+</ul>
+
+

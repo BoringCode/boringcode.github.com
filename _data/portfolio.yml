@@ -1,5 +1,7 @@
 - name: HTML5Notes
   img: http://test.com/test.png
+  url: >
+    [Testing](http://google.com)
   info: >
     I made this for fun
 
