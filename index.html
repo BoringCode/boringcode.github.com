@@ -13,7 +13,7 @@ cssClass: home
 		<ul class="portfolio-items">
 			{% for item in site.data.portfolio limit: 3 %}
 				<li>
-					<a href="/work/#{{item.slug }}">
+					<a href="/portfolio/#{{item.slug }}">
 					<img src="/assets/portfolio/{{ item.img }}">
 					<strong>{{item.name}}</strong>
 					</a>

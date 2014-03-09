@@ -3,8 +3,8 @@ markdown: redcarpet
 pygments: false
 permalink: pretty
 navigation:
-- text: Work
-  url: /work/
+- text: Portfolio
+  url: /portfolio/
 - text: Writing
   url: /writing/
   layout: post
