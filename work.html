@@ -1,26 +1,36 @@
 ---
 layout: default
 title: Work
-info: I make all sorts of stuff!
-headerImg: http://test.com/test.png
+cssClass: portfolio
+info: From websites to addons for Firefox
+headerImg: portfolio.jpg
 ---
-<ul class="portfolio-items">
+<ul class="portfolio-page-items">
 {% for item in site.data.portfolio %}
 	{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-	<li>
+	<li id="{{item.slug}}" class="{{thecycle}}">
 		{% if thecycle == 'odd' %}
-			<img src="/assets/portfolio/{{item.name}}.png" class="pop-left">
+			<img src="/assets/portfolio/{{ item.img }}">
 		{% endif %}
 		<div class="info">
 			<h3>{{item.name}}</h3>
-			{{ item.url | markdownify }}
+			<div class="links">{{ item.url | markdownify }}</div>
 			{{ item.info | markdownify }}
 		</div>
 		{% if thecycle == 'even' %}
-			<img src="/assets/portfolio/{{item.name}}.png" class="pop-right">
+			<img src="/assets/portfolio/{{ item.img }}">
 		{% endif %}
 	</li>
 {% endfor %}
 </ul>
+<div class="wrap firefox-addons">
+	<h2>Firefox Addons</h2>
+	<p>Over the years I have created numerous addons to help the Internet do things more efficiently.</p>
+	<ul class="list">
+		{% for item in site.data.firefoxaddons %}
+		<li><a href="{{item.url}}">{{item.name}}</a></li>
+		{% endfor %}
+	</uL>
+</div>
 
 

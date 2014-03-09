@@ -8,11 +8,13 @@
         {% else %}
           {{ page.title }}
         {% endif %}</h2>
-        <p>{{ page.info }}</p>
+        {{ page.info | markdownify }}
       </div>
-      <img src="{{ page.headerImg }}" class="bg">
+      <img src="/assets/header-images/{{ page.headerImg }}" class="bg">
     </header>
     {% endif %}
-    {{ content }}
+    <div class="content">
+      {{ content }}
+    </div>
   </section>
 {% include footer.html %}

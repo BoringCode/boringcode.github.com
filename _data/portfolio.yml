@@ -1,9 +1,45 @@
 - name: HTML5Notes
-  img: http://test.com/test.png
+  img: html5-notes.png
+  slug: notesapp
   url: >
-    [Testing](http://google.com)
+    [View Project](http://bradleyrosenfeld.com/HTML5Notes/) [Fork it on Github](http://github.com/BoringCode/HTML5Notes)
   info: >
-    I made this for fun
+    I made this app for the [December Mozilla Dev Derby](https://developer.mozilla.org/en-US/demos/devderby/2012/december) as a fun project.
 
 
-    **It was super fun to make**
+    This project is a really easy to use notetaking app that stores the notes in local storage. Better yet the app is responsive and can work offline making it perfect for use on smartphones.
+
+
+    To make it I mixed just the right amount of HTML5, Javascript, CSS3, and unicorn tears.
+- name: CSS Off 2013
+  img: cssoff2013.png
+  slug: cssoff2013
+  url: >
+   [View Entry](http://bradleyrosenfeld.com/CSSOff2013) [View Code](https://github.com/BoringCode/CSSOff2013)
+  info: >
+    [Unmatched Style](http://ums.sc/cssoff/) put out a big challenge this year. My task was to recreate a (crazy) design while pushing the browser to its limits.
+
+
+    This challenge was difficult for a variety of reasons, one of which being the layout. The layout was a fairly basic one column website with some twists. Because I still wanted to write HTML semantically, I sometimes had to push CSS pretty far to achieve some of the subtle layout features. For example the water overflowing the "Overflow" header. Or trying to create the bullet list in such a way so it was readable even when using a screen reader.
+
+
+    Did I mention that one of the requirements for entries was responsiveness? I took a desktop first approach as I knew what the design looked like for a normal sized device. Then I created breakpoints as I resized the browser to smaller widths. This created a great experience not just for desktop users, but also people using their smartphones or tablets.
+
+
+    To top the entry off I made sure it worked in modern browsers, as well as older versions of Internet Explorer. HTML5, CSS3, and jQuery (as well as some wonderful jQuery plugins) helped me achieve this design.
+- name: CWF Homeschool
+  img: cwfhomeschool.png
+  slug: cwfhomeschool
+  url: >
+   [View Site](http://cwfhomeschool.org/)
+  info: >
+    CWF badly needed a new website and a new way of handling registration.
+
+
+    As assistant webmaster, I set the goals. I wanted the website to be responsive, look good, and for registration to be really easy.
+
+
+    I created two parts to the website: the forward facing homepage with information for prospective families, as well as a backend that allows families to register for classes, create classes, and manage their schedules.
+
+
+    To make it I mixed just the right amount of HTML5, Javascript, CSS3, PHP, MySQL, and Bootstrap (for the backend).
