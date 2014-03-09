@@ -1,0 +1,25 @@
+<article class="{{ post.type }}">
+  <header>
+		<h2>
+      {% if post.type == "link" %}
+        <a href="{{post.link}}">{{ post.title }}</a>
+      {% else %}
+        <a href="{{post.url}}">{{ post.title }}</a>
+      {% endif %}
+    </h2>
+    <div class="meta">
+      <strong>Published:</strong> {{ post.date | date: '%B %-d, %Y' }}</strong>
+      {% if post.type %}
+        <em>{{ post.type }} post</em>
+      {% endif %}
+    </div>
+  </header>
+  {% if post.type == "link" %}
+    {{ post.content }}
+  {% else %}
+	  {{ post.excerpt | markdownify }}
+  {% endif %}
+  {% if post.type != "link" %}
+	  <a href="{{ post.url }}" class="read-more">Read More...</a>
+  {% endif %}
+</article>

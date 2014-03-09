@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Cool Post"
+date:   2014-03-09 10:55:46
+---
+
+I just love to write posts about stuff!

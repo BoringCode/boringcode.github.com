@@ -7,7 +7,7 @@ info: >
 headerImg: home-page-v2.jpg
 cssClass: home
 ---
-<div class="preview portfolio">
+<div class="preview portfolio blue">
 	<div class="wrap">
 		<h2>Recent Work</h2>
 		<ul class="portfolio-items">
@@ -24,13 +24,9 @@ cssClass: home
 </div>
 <div class="preview blog wrap">
 	<h2>Latest Writing</h2>
-	<article>
-		{% for post in site.posts limit: 1 %}
-			<h4><a href="{{post.url}}">{{ post.title }}</a></h4>
-			{{ post.excerpt | markdownify }}
-			<a href="{{ post.url }}" class="read-more">Read More...</a>
-		{% endfor %}
-	</article>
+	{% for post in site.posts limit: 1 %}
+		{% include articlepreview.html %}
+	{% endfor %}
 </div>
 
 

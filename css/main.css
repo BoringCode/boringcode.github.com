@@ -92,7 +92,6 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 a {
-  color: #16577D;
   text-decoration: none;
   -webkit-transition: all 300ms linear;
      -moz-transition: all 300ms linear;
@@ -100,7 +99,10 @@ a {
        -o-transition: all 300ms linear;
           transition: all 300ms linear;
 }
-  a:hover {
+  .content a {
+    color: #16577D;
+  }
+  .content a:hover {
     text-decoration: underline;
   }
 h2, h3, h4, h5, h6 {
@@ -222,13 +224,16 @@ section .content {
 .preview {
   padding: 40px 0;
 }
+  .preview.blue {
+    background-color: #16577D;
+    color: white;
+  }
+    .preview.blue a {
+      color: #CCC;
+    }
   .preview h2 {
     font-size: 2.2em;
     margin-bottom: 10px;
-  }
-  .preview.portfolio {
-    background-color: #16577D;
-    color: white;
   }
     .preview.portfolio .portfolio-items li {
       display: inline-block;
@@ -404,6 +409,44 @@ section .content {
     }
     .icon-forrst:hover {
       color: #5b9a68;
+    }
+/*BLOG*/
+.post-list {
+  margin: 60px auto;
+  font-size: 90%;
+}
+  .post-list article {
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #CCCCCC;
+  }
+    .post-list article header {
+      font-size: 90%;
+    }
+    .post-list article:first-child {
+      border-top: none;
+    }
+    .post-list article p, .post-list article .read-more {
+      display: block;
+      margin-left: 20px;
+    }
+article header {
+  font-size: 120%;
+}
+  article .meta {
+    color: #444;
+    font-size: 0.7em;
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
+    .blue article .meta {
+      color: #CCC;
+    }
+    article .meta em {
+      text-transform: uppercase;
+      display: inline-block;
+      margin-left: 20px;
     }
 /*FOOTER*/
 footer {
