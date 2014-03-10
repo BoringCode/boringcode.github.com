@@ -15,3 +15,26 @@ navigation:
 - text: Contact
   url: /contact/
   fullurl: /contact/index.html
+email: thatguy@bradleyrosenfeld.com
+social:
+- name: Twitter
+  url: http://twitter.com/BoringCode/
+  icon: twitter
+- name: Forrst
+  url: https://forrst.com/people/BoringCode
+  icon: forrst
+- name: Stack Overflow
+  url: http://stackoverflow.com/users/245909/boringcode
+  icon: stackoverflow
+- name: Google+
+  url: https://plus.google.com/u/0/103911801470461386422/
+  icon: googleplus
+- name: Github
+  url: http://github.com/BoringCode/
+  icon: github
+- name: Vimeo
+  url: https://vimeo.com/bradleyrosenfeld
+  icon: vimeo
+- name: reddit
+  url: http://www.reddit.com/user/BoringCode/
+  name: reddit

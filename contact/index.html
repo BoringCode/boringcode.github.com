@@ -8,19 +8,15 @@ headerImg: contact.jpg
 <div class="wrap">
 	<div class="left-col">
 		<p>My name is Bradley Rosenfeld. I'm a young web developer who is eager to help, just one lost puppy at a time. I enjoy creating awesome web apps with HTML sorcery, CSS wizardry, and Javascript magic.</p>
-		<p>Want to hire me to save the galaxy, or just your website? Want to say hello? <a href="mailto:thatguy@bradleyrosenfeld.com">Contact me today</a>!</p>
+		<p>Want to hire me to save the galaxy, or just your website? Want to say hello? <a href="mailto:{{site.email}}">Contact me today</a>!</p>
 	</div>
 	<div class="right-col">
-		<p class="email icon-mail"> <a href="mailto:thatguy@bradleyrosenfeld.com">Hire Me!</a></p>
+		<p class="email icon-mail"> <a href="mailto:{{site.email}}">Hire Me!</a></p>
 		<h4>Follow Me!</h4>
 		<ul class="follow">
-			<li class="icon-twitter"><a href="http://twitter.com/BoringCode/">Twitter</a></li>
-			<li class="icon-forrst"><a href="https://forrst.com/people/BoringCode">Forrst</a></li>
-			<li class="icon-stackoverflow"><a href="http://stackoverflow.com/users/245909/boringcode">Stack Overflow</a></li>
-			<li class="icon-googleplus"><a href="https://plus.google.com/u/0/103911801470461386422/">Google Plus</a></li>
-			<li class="icon-github"><a href="http://github.com/BoringCode/">Github</a></li>
-			<li class="icon-vimeo"><a href="https://vimeo.com/bradleyrosenfeld">Vimeo</a></li>
-			<li class="icon-reddit"><a href="http://www.reddit.com/user/BoringCode/">Reddit</a></li>
+			{% for item in site.social %}
+				<li class="icon-{{item.icon}}"><a href="{{item.url}}">{{item.name}}</a></li>
+			{% endfor %}
 		</ul>
 	</div>
 </div>
