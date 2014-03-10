@@ -89,6 +89,10 @@
   .wrap.narrow {
     padding-right: 15%;
   }
+  .wrap.margins {
+    margin: 60px auto;
+    margin-bottom: 150px;
+  }
 body {
   color: #333333;
   font-size: 110%;
