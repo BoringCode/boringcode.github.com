@@ -1,16 +1,3 @@
-- name: HTML5Notes
-  img: html5-notes.png
-  slug: notesapp
-  url: >
-    [View Project](http://bradleyrosenfeld.com/HTML5Notes/) [Fork it on Github](http://github.com/BoringCode/HTML5Notes)
-  info: >
-    I made this app for the [December Mozilla Dev Derby](https://developer.mozilla.org/en-US/demos/devderby/2012/december) as a fun project.
-
-
-    This project is a really easy to use notetaking app that stores the notes in local storage. Better yet the app is responsive and can work offline making it perfect for use on smartphones.
-
-
-    To make it I mixed just the right amount of HTML5, Javascript, CSS3, and unicorn tears.
 - name: CSS Off 2013
   img: cssoff2013.png
   slug: cssoff2013
@@ -27,6 +14,19 @@
 
 
     To top the entry off I made sure it worked in modern browsers, as well as older versions of Internet Explorer. HTML5, CSS3, and jQuery (as well as some wonderful jQuery plugins) helped me achieve this design.
+- name: HTML5Notes
+  img: html5notes.png
+  slug: notesapp
+  url: >
+    [View Project](http://bradleyrosenfeld.com/HTML5Notes/) [Fork it on Github](http://github.com/BoringCode/HTML5Notes)
+  info: >
+    I made this app for the [December Mozilla Dev Derby](https://developer.mozilla.org/en-US/demos/devderby/2012/december) as a fun project.
+
+
+    This project is a really easy to use notetaking app that stores the notes in local storage. Better yet the app is responsive and can work offline making it perfect for use on smartphones.
+
+
+    To make it I mixed just the right amount of HTML5, Javascript, CSS3, and unicorn tears.
 - name: CWF Homeschool
   img: cwfhomeschool.png
   slug: cwfhomeschool
@@ -43,3 +43,16 @@
 
 
     To make it I mixed just the right amount of HTML5, Javascript, CSS3, PHP, MySQL, and Bootstrap (for the backend).
+- name: Do I Need An Umbrella?
+  img: umbrella.png
+  slug: umbrella
+  url: >
+   [View Project](http://bradleyrosenfeld.com/DoINeedAnUmbrella/) [Fork it on Github](https://github.com/BoringCode/DoINeedAnUmbrella)
+  info: >
+    Ever wonder whether you need an umbrella, but don't want to look outside? Want to know whether you should go make a snowman? I whipped up this project just for you!
+
+
+    I wanted a fun project to do, so I thought, "Why not? The world needs another weather app." And so, "Do I Need An Umbrella?" was born.
+
+
+    HTML5, CSS3, jQuery, and the [Forecast.io API](https://developer.forecast.io/) were my weapons of choice. I designed the app to be responsive so that I could use it anywhere.
