@@ -532,7 +532,24 @@ footer {
     display: block;
     font-size: 4em;
     color: #FFDF00;
+    -webkit-transition: all 1100ms ease-in;
+       -moz-transition: all 1100ms ease-in;
+        -ms-transition: all 1100ms ease-in;
+         -o-transition: all 1100ms ease-in;
+            transition: all 1100ms ease-in;
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    pointer-events: none;
   }
+    footer .rocketry:hover .icon-rocket{
+      -webkit-transform: rotate(10deg) translateY(-1200px);
+         -moz-transform: rotate(10deg) translateY(-1200px);
+          -ms-transform: rotate(10deg) translateY(-1200px);
+           -o-transform: rotate(10deg) translateY(-1200px);
+              transform: rotate(10deg) translateY(-1200px);
+      color: #841118;
+      font-size: 10em;
+    }
 /*Responsive*/
 @media all and (max-width: 1350px) {
   .home section > header {
