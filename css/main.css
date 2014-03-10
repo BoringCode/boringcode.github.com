@@ -409,6 +409,9 @@ section > header {
   .contact .email {
     font-size: 1.4em;
   }
+    .contact .email a:before {
+      margin-right: 5px;
+    }
   .contact .follow li {
     font-size: 1.8em;
     list-style: none;
