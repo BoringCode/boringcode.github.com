@@ -1,14 +1,17 @@
 name: Bradley Rosenfeld
 markdown: redcarpet
 pygments: false
-permalink: pretty
+permalink: /writing/:year/:month/:day/:title
 paginate: 5
 paginate_path: writing/page/:num
 navigation:
 - text: Portfolio
   url: /portfolio/
+  fullurl: /portfolio/index.html
 - text: Writing
   url: /writing/
+  fullurl: /writing/index.html
   layout: post
 - text: Contact
   url: /contact/
+  fullurl: /contact/index.html

@@ -12,15 +12,17 @@ headerImg: blog.jpg
 		{% endfor %}
 	</div>
 </div>
-<div class="post-list wrap">
+{% if paginator.total_posts > 1 %}
+<div class="post-list wrap narrow">
 	{% for post in paginator.posts %}
     {% if post.next != nil %}
       {% include articlepreview.html %}
     {% endif %}
 	{% endfor %}
 </div>
+{% endif %}
 {% if paginator.total_pages > 1 %}
-<div class="pagination wrap">
+<div class="pagination wrap narrow">
   {% if paginator.previous_page > 1  %}
     <a href="/writing/page/{{ paginator.previous_page }}/" class="previous">Previous</a>
   {% endif %}

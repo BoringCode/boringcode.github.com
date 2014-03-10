@@ -4,5 +4,16 @@
       	<span class="icon-rocket"></span>
    	</div>
     </footer>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+    	//twitter button
+    	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+    	//nav toggle
+    	$(".nav-toggle").on("click", function() {
+    		$(this).toggleClass("toggled");
+    		$(this).siblings("ul").slideToggle(300);
+    	});
+    </script>
   </body>
 </html>

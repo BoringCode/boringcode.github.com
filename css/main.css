@@ -86,9 +86,12 @@
   width: 100%;
   margin: auto;
 }
+  .wrap.narrow {
+    padding-right: 15%;
+  }
 body {
   color: #333333;
-  font-size: 100%;
+  font-size: 110%;
   font-family: 'Source Sans Pro', sans-serif;
 }
 a {
@@ -130,27 +133,17 @@ p {
 ul.list li {
   margin-left: 20px;
 }
-.bg {
-  display: block;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: -0.25em;
-  height: auto;
-  min-height: 100%;
-  min-width: 102%;
-}
 /*Site header*/
 body > header {
   border-bottom: 3px solid #841118;
-  padding: 20px 10px;
+  padding: 20px 0;
   background: #EFEEEE;
   position: relative;
 }
   body > header .name {
     display: inline-block;
     vertical-align: middle;
-    width: 40%;
+    width: 50%;
     margin-right: -0.25em;
   }
     body > header .name h1 {
@@ -170,10 +163,30 @@ body > header {
   body > header nav {
     display: inline-block;
     vertical-align: middle;
-    width: 60%;
+    width: 50%;
     text-align: right;
     font-size: 1.1em;
   }
+    body > header nav .nav-toggle {
+      display: none;
+      position: absolute;
+      top: 20px;
+      right: 10px;
+      height: 60px;
+      width: 60px;
+      background: none;
+      border: none;
+      font-size: 1.8em;
+      color: #16577D;
+      cursor: pointer;
+      text-align: right;
+    }
+      body > header nav .nav-toggle:before {
+        content: "☰";
+      }
+      body > header nav .nav-toggle.toggled:before {
+        content: "×";
+      }
     body > header nav li {
       display: inline-block;
       vertical-align: middle;
@@ -194,19 +207,19 @@ section > header {
   height: 150px;
   padding: 2% 0;
   overflow: hidden;
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: white;
   text-shadow: 0px 1px 0px black;
 }
   .home section > header {
-    font-size: 1.5em;
+    font-size: 1.4em;
     height: 450px;
     padding: 8% 0;
     text-shadow: 0px 1px 0px #9E9D9D;
     color: #841118;
   }
   section > header h2 {
-    font-size: 2.2em;
+    font-size: 2.1em;
   }
     section > header h2 span {
       display: block;
@@ -217,60 +230,82 @@ section > header {
     color: inherit;
     text-decoration: underline;
   }
-section .content {
-  font-size: 1.1em;
-}
+  section > header .bg {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: -0.25em;
+      height: auto;
+      min-height: 100%;
+      min-width: 102%;
+    }
 /*HOME PAGE*/
 .preview {
-  padding: 40px 0;
+  padding: 60px 0;
 }
+  .preview.banner {
+    padding: 20px 0;
+  }
+    .preview.banner h3, .preview.banner p {
+      display: inline-block;
+      vertical-align: baseline;
+      margin: 0;
+      margin-right: 20px;
+    }
+  .preview.red {
+    background-color: #841118;
+    color: white;
+  }
   .preview.blue {
     background-color: #16577D;
     color: white;
   }
-    .preview.blue a {
+    .preview.blue a, .preview.red a {
       color: #CCC;
     }
-  .preview h2 {
-    font-size: 2.2em;
-    margin-bottom: 10px;
-  }
-    .preview.portfolio .portfolio-items li {
-      display: inline-block;
-      vertical-align: top;
-      width: 32%;
-      margin-right: -0.25em;
-      margin-left: 2%;
-      list-style: none;
+    .preview.red a {
+      text-decoration: underline;
     }
-      .preview.portfolio .portfolio-items li:first-child {
-        margin-left: 0;
-      }
-      .preview.portfolio .portfolio-items img {
-        display: block;
-        width: 100%;
-        height: auto;
-        border: 2px solid #841118;
-        -moz-border-radius: 2px;
-        -webkit-border-radius: 2px;
-        border-radius: 2px;
-      }
-      .preview.portfolio .portfolio-items a {
-        text-decoration: none;
-        color: white;
-      }
-      .preview.portfolio .portfolio-items strong {
-        display: block;
-        margin-left: 2px;
-      }
-  .preview.blog h3 {
-    margin-bottom: 10px;
+  .preview .wrap > h2 {
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
   }
-    .preview.blog h4 a {
-      color: inherit;
+  .preview.portfolio .portfolio-items li {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    margin-right: -0.25em;
+    margin-left: 2%;
+    list-style: none;
+  }
+    .preview.portfolio .portfolio-items li:first-child {
+      margin-left: 0;
+    }
+    .preview.portfolio .portfolio-items img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 2px solid #841118;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+    }
+    .preview.portfolio .portfolio-items a {
+      text-decoration: none;
+      color: white;
+    }
+    .preview.portfolio .portfolio-items strong {
+      display: block;
+      margin-left: 2px;
+    }
+  .preview.blog header {
+    margin-bottom: 0.8em;
+  }
+    .home .preview.blog article h2 {
+      font-size: 1.6em;
     }
   .preview.blog p {
-    margin-bottom: 10px;
     margin-left: 20px;
   }
   .preview.blog .read-more {
@@ -279,7 +314,8 @@ section .content {
   }
 /*PORTFOLIO PAGE*/
 .portfolio .firefox-addons.wrap {
-  margin: 40px auto;
+  margin: 60px auto;
+  margin-top: 40px;
 }
   .portfolio .firefox-addons h2 {
     padding-left: 110px;
@@ -347,7 +383,7 @@ section .content {
   .contact .left-col {
     display: inline-block;
     vertical-align: top;
-    width: 65%;
+    width: 64%;
     margin-right: 2%;
   }
   .contact .right-col {
@@ -431,23 +467,42 @@ section .content {
       display: block;
       margin-left: 20px;
     }
-article header {
-  font-size: 120%;
+article.full {
+  margin: 60px auto;
 }
-  article .meta {
-    color: #444;
-    font-size: 0.7em;
-    margin-top: 4px;
-    margin-bottom: 10px;
+  article header {
+    font-size: 120%;
+    margin-bottom: 1.5em;
   }
-    .blue article .meta {
-      color: #CCC;
+    article .meta {
+      color: #444;
+      font-size: 0.7em;
+      margin-top: 4px;
+      margin-bottom: 10px;
     }
-    article .meta em {
-      text-transform: uppercase;
-      display: inline-block;
-      margin-left: 20px;
+      .blue article .meta {
+        color: #CCC;
+      }
+      article .meta em {
+        text-transform: uppercase;
+        display: inline-block;
+        margin-left: 20px;
+      }
+  article .post-content {
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CCCCCC;
+  }
+    article .post-content img {
+      max-width: 100%;
+      display: block;
+      margin: 1em 0;
     }
+  .twitter-mention-button {
+    display: inline-block;
+    vertical-align: middle;
+  }
 /*FOOTER*/
 footer {
   padding: 40px 0;
@@ -464,3 +519,133 @@ footer {
     font-size: 4em;
     color: #FFDF00;
   }
+/*Responsive*/
+@media all and (max-width: 1350px) {
+  .home section > header {
+    height: 350px;
+  }
+  .home section > header .bg {
+    top: -10%;
+    right: -1.8%;
+  }
+}
+@media all and (max-width: 1100px) {
+  .home section > header .bg {
+    right: -7%;
+  }
+}
+@media all and (max-width: 920px) {
+  .wrap {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .portfolio-page-items .odd .info {
+    padding-right: 10px;
+  }
+  .portfolio-page-items .even .info {
+    padding-left: 10px;
+  }
+}
+@media all and (max-width: 890px) {
+  .home section > header {
+    font-size: 98%;
+    height: 200px;
+  }
+  .home section > header .bg {
+    top: -40%;
+    right: -30%;
+  }
+}
+@media all and (max-width: 800px) {
+  body {
+    font-size: 90%;
+  }
+  section > header {
+    padding: 3% 0;
+    height: 120px;
+  }
+    section > header .bg {
+      right: -30%;
+    }
+}
+@media all and (max-width: 620px) {
+  section > header {
+    padding: 5% 0;
+    height: 110px;
+  }
+    .home section > header {
+      font-size: 90%;
+      height: 150px;
+    }
+  section > header .bg {
+    right: auto;
+    left: -80%;
+  }
+  .preview.portfolio .portfolio-items li {
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .wrap.narrow {
+    padding-right: 10px;
+  }
+  article.full, .portfolio-page-items {
+    margin: 20px auto;
+  }
+  .portfolio-page-items li {
+    margin-bottom: 20px;
+    padding: 20px 0;
+  }
+  .preview {
+    padding: 20px 10px;
+  }
+  footer {
+    padding: 20px 0;
+  }
+}
+@media all and (max-width: 510px) {
+  body > header .name {
+    width: 90%;
+  }
+  body > header nav {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+    body > header nav .nav-toggle {
+      display: block;
+    }
+    body > header nav ul {
+      display: none;
+      margin-top: 20px;
+    }
+  .portfolio .firefox-addons h2 {
+    font-size: 1.6em;
+  }
+  .contact .left-col {
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+  .contact .right-col {
+    margin: 0;
+    width: 100%;
+    display: block;
+    border-left: none;
+    border-top: 2px solid #841118;
+  }
+}
+/*retina screens*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+  .portfolio .firefox-addons h2 {
+    background-image: url("/assets/firefox-logo-pixel-doubled.png");
+    background-size: 100px 104px;
+  }
+}

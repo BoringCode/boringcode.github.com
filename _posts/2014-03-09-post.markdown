@@ -1,6 +1,0 @@
----
-layout: post
-title:  "POST!"
-date:   2014-03-09 12:55:46
----
-Posts are fun to write!

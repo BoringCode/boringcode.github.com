@@ -1,9 +1,32 @@
----
-layout: default
----
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
-</div>
+{% include header.html %}
+<section>
+	<header>
+	  <div class="wrap">
+	    <h2>Writing</h2>
+	    <p>Just about all kinds of things</p>
+	  </div>
+	  <img src="/assets/header-images/blog.jpg" class="bg">
+	</header>
+	<article class="{{ page.type }} content full narrow wrap">
+	  <header>
+			<h2>
+	      {% if page.type == "link" %}
+	        <a href="{{page.link}}">{{ page.title }}</a>
+	      {% else %}
+	      	{{ page.title }}
+	      {% endif %}
+	    </h2>
+	    <div class="meta">
+	      <strong>Published:</strong> {{ page.date | date: '%B %-d, %Y' }}</strong>
+	      {% if page.type %}
+	        <em>{{ page.type }} post</em>
+	      {% endif %}
+	    </div>
+	  </header>
+	  <div class="post-content">
+	  		{{ content }}
+		</div>
+		<h4>Want to talk about this post? <a href="https://twitter.com/intent/tweet?screen_name=BoringCode&text=Hey, that post was incredible!" class="twitter-mention-button" data-size="large" data-related="BoringCode">Tweet to @BoringCode</a></h4>
+	</article>
+</section>
+{% include footer.html %}
