@@ -7,7 +7,7 @@ headerImg: portfolio.jpg
 ---
 <div class="preview banner red">
   <div class="wrap">
-    <p>I'm available for hire, feel free to <a href="/contact/">contact me</a></p>
+    <p>I'm available for hire, feel free to <a href="{{site.base_url}}/contact/">contact me</a></p>
   </div>
 </div>
 <ul class="portfolio-page-items">
@@ -15,7 +15,7 @@ headerImg: portfolio.jpg
 	{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
 	<li id="{{item.slug}}" class="{{thecycle}}">
 		{% if thecycle == 'odd' %}
-			<img src="/assets/portfolio/{{ item.img }}">
+			<img src="{{site.base_url}}/assets/portfolio/{{ item.img }}" alt="Image of {{ item.name }}">
 		{% endif %}
 		<div class="info">
 			<h3>{{item.name}}</h3>
@@ -23,7 +23,7 @@ headerImg: portfolio.jpg
 			{{ item.info | markdownify }}
 		</div>
 		{% if thecycle == 'even' %}
-			<img src="/assets/portfolio/{{ item.img }}">
+			<img src="{{site.base_url}}/assets/portfolio/{{ item.img }}" alt="Image of {{ item.name }}">
 		{% endif %}
 	</li>
 {% endfor %}

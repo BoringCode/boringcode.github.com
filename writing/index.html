@@ -24,16 +24,16 @@ headerImg: blog.jpg
 {% if paginator.total_pages > 1 %}
 <div class="pagination wrap narrow">
   {% if paginator.previous_page > 1  %}
-    <a href="/writing/page/{{ paginator.previous_page }}/" class="previous">Previous</a>
+    <a href="{{site.base_url}}/writing/page/{{ paginator.previous_page }}/" class="previous">Previous</a>
   {% endif %}
   {% if paginator.previous_page == 1 %}
-    <a href="/writing/" class="previous">Previous</a>
+    <a href="{{site.base_url}}/writing/" class="previous">Previous</a>
   {% endif %}
   {% if paginator.next_page and paginator.previous_page %}
     <span>|</span>
   {% endif %}
   {% if paginator.next_page %}
-    <a href="/writing/page/{{ paginator.next_page }}/" class="next">Next</a>
+    <a href="{{site.base_url}}/writing/page/{{ paginator.next_page }}/" class="next">Next</a>
   {% endif %}
 </div>
 {% endif %}
