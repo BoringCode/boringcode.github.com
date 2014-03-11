@@ -168,6 +168,9 @@ body > header {
     text-align: right;
     font-size: 1.1em;
   }
+    body > header nav ul {
+      margin-right: -20px;
+    }
     body > header nav .nav-toggle {
       display: none;
       position: absolute;
