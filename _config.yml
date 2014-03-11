@@ -1,7 +1,7 @@
 name: Bradley Rosenfeld
 markdown: redcarpet
 pygments: false
-permalink: /writing/:year/:month/:day/:title
+permalink: /writing/:year/:month/:day/:title/
 paginate: 8
 paginate_path: writing/page/:num
 base_url: http://localhost:4000
