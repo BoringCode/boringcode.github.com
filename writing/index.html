@@ -4,14 +4,16 @@ title: Writing
 info: Just about all kinds of things
 headerImg: blog.jpg
 ---
+{% if paginator.previous_page == nil %}
 <div class="preview blog blue">
-	<div class="wrap">
+	<div class="wrap narrow">
 		<h4>The Latest</h4>
 		{% for post in site.posts limit: 1 %}
 			{% include articlepreview.html %}
 		{% endfor %}
 	</div>
 </div>
+{% endif %}
 {% if paginator.total_posts > 1 %}
 <div class="post-list wrap narrow">
 	{% for post in paginator.posts %}
@@ -27,13 +29,13 @@ headerImg: blog.jpg
     <a href="{{site.base_url}}/writing/page/{{ paginator.previous_page }}/" class="previous">Previous</a>
   {% endif %}
   {% if paginator.previous_page == 1 %}
-    <a href="{{site.base_url}}/writing/" class="previous">Previous</a>
+    <a href="{{site.base_url}}/writing/" class="previous">Newer Entries</a>
   {% endif %}
   {% if paginator.next_page and paginator.previous_page %}
     <span>|</span>
   {% endif %}
   {% if paginator.next_page %}
-    <a href="{{site.base_url}}/writing/page/{{ paginator.next_page }}/" class="next">Next</a>
+    <a href="{{site.base_url}}/writing/page/{{ paginator.next_page }}/" class="next">Older Entries</a>
   {% endif %}
 </div>
 {% endif %}

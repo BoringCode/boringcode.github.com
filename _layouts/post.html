@@ -19,7 +19,7 @@
 	    <div class="meta">
 	      <strong>Published:</strong> {{ page.date | date: '%B %-d, %Y' }}
 	      {% if page.type %}
-	        <em>{{ page.type }} post</em>
+	        <em><span class="icon-{{page.type}}"></span> {{ page.type }} post</em>
 	      {% endif %}
 	    </div>
 	  </header>

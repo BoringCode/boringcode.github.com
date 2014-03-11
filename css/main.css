@@ -19,15 +19,15 @@
 }
 @font-face {
   font-family: 'social-icons';
-  src:url('../fonts/social-icons.eot');
-  src:url('../fonts/social-icons.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/social-icons.woff') format('woff'),
-    url('../fonts/social-icons.ttf') format('truetype'),
-    url('../fonts/social-icons.svg#social-icons') format('svg');
+  src:url('../fonts/social-icons.eot?-p6562k');
+  src:url('../fonts/social-icons.eot?#iefix-p6562k') format('embedded-opentype'),
+    url('../fonts/social-icons.woff?-p6562k') format('woff'),
+    url('../fonts/social-icons.ttf?-p6562k') format('truetype'),
+    url('../fonts/social-icons.svg?-p6562k#social-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-.icon-arrow-down:before, .icon-rocket:before, .icon-comment:before, .icon-reddit:before, .icon-skype:before, .icon-twitter:before, .icon-stackoverflow:before, .icon-vimeo:before, .icon-googleplus:before, .icon-github:before, .icon-forrst:before, .icon-mail:before {
+.icon-file-pdf:before, .icon-link:before, .icon-arrow-down:before, .icon-rocket:before, .icon-comment:before, .icon-reddit:before, .icon-skype:before, .icon-twitter:before, .icon-stackoverflow:before, .icon-vimeo:before, .icon-googleplus:before, .icon-github:before, .icon-forrst:before, .icon-mail:before {
   font-family: 'social-icons';
   speak: none;
   font-style: normal;
@@ -44,11 +44,14 @@
        -o-transition: color 200ms ease;
           transition: color 200ms ease;
 }
+.icon-file-pdf:before {
+  content: "\e600";
+}
+.icon-link:before {
+  content: "\e601";
+}
 .icon-reddit:before {
   content: "\e002";
-}
-.icon-skype:before {
-  content: "\e036";
 }
 .icon-twitter:before {
   content: "\e018";
@@ -71,14 +74,8 @@
 .icon-mail:before {
   content: "\e004";
 }
-.icon-comment:before {
-  content: "\e003";
-}
 .icon-rocket:before {
   content: "\e001";
-}
-.icon-arrow-down:before {
-  content: "\e103";
 }
 /*The goods*/
 .wrap {
@@ -134,7 +131,7 @@ p {
   margin-bottom: 1em;
   line-height: 1.4em;
 }
-ul.list li {
+.list li {
   margin-left: 20px;
 }
 /*Site header*/
@@ -150,14 +147,14 @@ body > header {
     width: 50%;
     margin-right: -0.25em;
   }
-    body > header .name h1 {
+    body > header h1 {
       font-size: 2.8em;
       line-height: 0.9em;
       color: #16577d;
       font-family: 'FranchiseRegular';
       font-weight: normal;
     }
-    body > header .name h2 {
+    body > header h2 {
       font-family: 'Bitter', serif;
       font-style: italic;
       font-size: 1.2em;
@@ -195,8 +192,14 @@ body > header {
       display: inline-block;
       vertical-align: middle;
       list-style: none;
-      margin-left: 20px;
+      border-left: 1px solid #841118;
     }
+      body > header nav a {
+        padding: 20px;
+      }
+      body > header nav li:first-child {
+        border-left: 0;
+      }
     body > header a, body > header a:hover {
       color: inherit;
       text-decoration: none;
@@ -309,12 +312,8 @@ section > header {
     .home .preview.blog article h2 {
       font-size: 1.6em;
     }
-  .preview.blog p {
-    margin-left: 20px;
-  }
   .preview.blog .read-more {
     display: block;
-    margin-left: 20px;
   }
 /*PORTFOLIO PAGE*/
 .portfolio .firefox-addons.wrap {
@@ -389,7 +388,7 @@ section > header {
 /*CONTACT*/
 .contact  .content .wrap {
   margin-top: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 120px;
 }
   .contact .left-col {
     display: inline-block;
@@ -397,6 +396,9 @@ section > header {
     width: 64%;
     margin-right: 2%;
   }
+    .contact .left-col h3 {
+      margin-bottom: 0.5em;
+    }
   .contact .right-col {
     display: inline-block;
     vertical-align: top;
@@ -406,10 +408,10 @@ section > header {
     margin-left: 0.25em;
     border-left: 2px solid #841118;
   }
-  .contact .email {
+  .contact .right-col a {
     font-size: 1.4em;
   }
-    .contact .email a:before {
+    .contact .right-col a:before {
       margin-right: 5px;
     }
   .contact .follow li {
@@ -466,9 +468,9 @@ section > header {
   font-size: 90%;
 }
   .post-list article {
+    margin-bottom: 30px;
+    padding-top: 30px;
     padding-bottom: 5px;
-    margin-bottom: 20px;
-    padding-top: 20px;
     border-top: 1px solid #CCCCCC;
   }
     .post-list article header {
@@ -479,7 +481,6 @@ section > header {
     }
     .post-list article p, .post-list article .read-more {
       display: block;
-      margin-left: 20px;
     }
 article.full {
   margin: 60px auto;
@@ -503,20 +504,48 @@ article.full {
         margin-left: 20px;
       }
   article .post-content {
-    padding-bottom: 5px;
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #CCCCCC;
   }
+    article.article-preview .post-content {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
     article .post-content img {
       max-width: 100%;
       display: block;
       margin: 1em 0;
     }
+  article blockquote {
+    border-left: 4px solid #CCC;
+    padding-left: 0.8em;
+  }
+  article ul, article ol {
+    margin-bottom: 1.5em;
+  }
+    article li {
+      margin-bottom: 0.2em;
+      padding-left: 0.4em;
+      margin-left: -0.4em;
+    }
+  article hr {
+    margin: 1.5em 0;
+    border-top: none;
+    border-bottom: 2px solid #CCCCCC;
+  }
   .twitter-mention-button {
     display: inline-block;
     vertical-align: middle;
   }
+.pagination {
+  padding-top: 30px;
+  border-top: 1px solid #CCCCCC;
+  margin-bottom: 60px;
+  margin-top: -30px;
+  font-size: 1.2em;
+}
 /*FOOTER*/
 footer {
   padding: 40px 0;
@@ -635,7 +664,7 @@ footer {
     padding: 20px 0;
   }
 }
-@media all and (max-width: 510px) {
+@media all and (max-width: 590px) {
   body > header .name {
     width: 90%;
   }
