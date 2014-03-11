@@ -278,7 +278,7 @@ section > header {
     .preview.red a {
       text-decoration: underline;
     }
-  .preview .wrap > h2 {
+  .preview .wrap > h2, .preview.wrap > h2 {
     font-size: 2.2em;
     margin-bottom: 0.5em;
   }
@@ -310,6 +310,9 @@ section > header {
       display: block;
       margin-left: 2px;
     }
+  .home .preview.blog article {
+    font-size: 90%;
+  }
   .preview.blog header {
     margin-bottom: 0.8em;
   }
