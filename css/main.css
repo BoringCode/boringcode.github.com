@@ -227,9 +227,15 @@ section > header {
     font-size: 1.4em;
     height: 450px;
     padding: 8% 0;
-    text-shadow: 0px 1px 0px #9E9D9D;
     color: #841118;
+    text-shadow: none;
+    color: #16577D
   }
+    .home section > header span, .home section > header strong, .home section > header p {
+      background: rgba(256,256,256,0.6);
+      padding: 0.01em 0.2em;
+      display: inline-block;
+    }
   section > header h2 {
     font-size: 2.1em;
   }
@@ -699,6 +705,10 @@ footer {
       margin-top: 20px;
       max-height: 60px;
     }
+  .home section > header {
+    padding: 2% 0;
+    font-size: 87%;
+  }
   .portfolio .firefox-addons h2 {
     font-size: 1.6em;
   }
