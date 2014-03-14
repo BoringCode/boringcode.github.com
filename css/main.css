@@ -140,6 +140,7 @@ body > header {
   padding: 20px 0;
   background: #EFEEEE;
   position: relative;
+  overflow: hidden;
 }
   body > header .name {
     display: inline-block;
