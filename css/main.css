@@ -647,6 +647,9 @@ footer {
     section > header .bg {
       right: -30%;
     }
+  .preview {
+    padding: 40px 0;
+  }
 }
 @media all and (max-width: 620px) {
   section > header {
