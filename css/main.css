@@ -590,7 +590,7 @@ footer {
     -webkit-pointer-events: none;
     pointer-events: none;
   }
-    footer .rocketry:hover .icon-rocket, footer .rocketry:active .icon-rocket {
+    footer .rocketry:hover .icon-rocket, footer .rocketry:focus .icon-rocket {
       -webkit-transform: rotate(10deg) translateY(-1200px);
          -moz-transform: rotate(10deg) translateY(-1200px);
           -ms-transform: rotate(10deg) translateY(-1200px);
