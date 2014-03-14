@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "What's up?"
+date:   2014-03-14
+---
+Happy Pi Day internet! Today marks my 20th birthday and I thought I would celebrate by telling a story. One depressing, early morning I was sitting in my Visual Communications class at [Taylor University](http://taylor.edu) and I felt inspired. I scribbled a few things in my notebook and thought about cute puppies. This "fancy" new website is the result. I never was a good storyteller.
+
+##New Design
+
+My old website filled its purpose well. It was a simple one pager that basically introduced who I am and some of the work that I've done.
+
+![Old website design](/assets/blog/old-web.png)
+
+Although I liked how the website looked initially, as time went on I slowly began to dislike the dark design and the stark yellow that I chose.
+
+With the new design I have lightened up the overall color scheme. I moved away from the yellow and dark gray and went to nice blue, red, and (lighter) grays. Typography is a big component of the new style. I am using [Bitter](http://www.google.com/fonts/specimen/Bitter) for titles and [Source Sans Pro](http://www.google.com/fonts/specimen/Source+Sans+Pro) for body text. Bitter is an especially good looking serif typeface that is stable and trustworthy looking.
+
+Another big change is using a static site generator. I host this website with [Github Pages](http://pages.github.com/) which has [Jekyll](http://jekyllrb.com/) built in. Jekyll works really well and for the most part it stays out of the way. After some trial and error, I learned how to use template tags and some other cool tricks that Jekyll has up its sleeve. Although I have not open sourced the code, you can see how I used Jekyll on the [Github repo](https://github.com/BoringCode/boringcode.github.com).
+
+##New Blog
+
+Although I would like to write more, I am under no illusion of writing every day or week. This blog will serve as a place for me to talk about things that interest me. Everything from programming to the latest gadget from Apple.
+
+Strap yourself in, this should be an interesting ride. At least for me that is.
