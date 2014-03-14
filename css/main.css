@@ -234,6 +234,7 @@ section > header {
     .home section > header span, .home section > header strong, .home section > header p {
       background: rgba(256,256,256,0.6);
       padding: 0.01em 0.2em;
+      padding-left: 0;
       display: inline-block;
     }
   section > header h2 {
