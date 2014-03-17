@@ -600,6 +600,11 @@ footer {
       font-size: 10em;
     }
 /*Responsive*/
+@media all and (min-width: 1600px) {
+  .home section > header {
+    height: 600px;
+  }
+}
 @media all and (max-width: 1350px) {
   .home section > header {
     height: 350px;
