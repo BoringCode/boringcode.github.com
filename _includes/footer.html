@@ -7,12 +7,11 @@
     <script>
     	//twitter button
     	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
     	//nav toggle
     	document.querySelector(".nav-toggle").addEventListener("click", function(event) {
         event.target.classList.toggle('toggled');
       })
-      //WHUT?
-      var spinning={element:null,toggled:false,init:function(a){var b=this;b.element=document.querySelectorAll(a);return b;},keydown:function(b){var a=april;if(b.keyCode===32){for(i=0;i<a.element.length;i++){a.element[i].classList.toggle("spin");}b.preventDefault();}}};var today=new Date;if(today.getMonth()===3&&today.getDate()===1){var april=spinning.init("body");document.addEventListener("keydown",april.keydown,false);}
     </script>
   </body>
 </html>

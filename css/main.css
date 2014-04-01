@@ -90,18 +90,11 @@
     margin: 60px auto;
     margin-bottom: 150px;
   }
-html {
-  background: #414141;
-  overflow-x: hidden;
-}
 body {
   color: #333333;
-  background: white;
   font-size: 110%;
   font-family: 'Source Sans Pro', sans-serif;
 }
-/*WHUT?*/
-.spin{-webkit-box-shadow:0 0 40px 1px rgba(0,0,0,0.6);box-shadow:0 0 40px 1px rgba(0,0,0,0.6);-webkit-animation:spin 4s ease infinite alternate;-moz-animation:spin 4s ease infinite alternate;-ms-animation:spin 4s ease infinite alternate;-o-animation:spin 4s ease infinite alternate;animation:spin 4s ease infinite alternate}@-webkit-keyframes spin{30%{-webkit-transform:scale(0.9) rotate(0)}100%{-webkit-transform:scale(0.9) rotate(360deg)}}@-moz-keyframes spin{30%{-moz-transform:scale(0.9) rotate(0)}100%{-moz-transform:scale(0.9) rotate(360deg)}}@-ms-keyframes spin{30%{-ms-transform:scale(0.9) rotate(0)}100%{-ms-transform:scale(0.9) rotate(360deg)}}@-o-keyframes spin{30%{-o-transform:scale(0.9) rotate(0)}100%{-o-transform:scale(0.9) rotate(360deg)}}@keyframes spin{30%{transform:scale(0.9) rotate(0)}100%{transform:scale(0.9) rotate(360deg)}}
 a {
   text-decoration: none;
   -webkit-transition: all 300ms linear;
@@ -230,10 +223,6 @@ section > header {
   color: white;
   text-shadow: 0px 1px 0px black;
 }
-  section > header .wrap {
-    position: relative;
-    z-index: 10;
-  }
   .home section > header {
     font-size: 1.4em;
     height: 450px;
@@ -267,7 +256,7 @@ section > header {
   section > header .bg {
       display: block;
       position: absolute;
-      z-index: 0;
+      z-index: -1;
       top: 0;
       right: -0.25em;
       height: auto;
