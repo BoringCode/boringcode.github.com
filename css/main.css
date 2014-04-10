@@ -282,9 +282,6 @@ section > header {
     padding: 20px 0;
     display: block;
   }
-    a.preview.banner p {
-      text-decoration: underline;
-    }
     .preview.banner h3, .preview.banner p {
       display: inline-block;
       vertical-align: baseline;
