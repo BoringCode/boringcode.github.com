@@ -280,6 +280,7 @@ section > header {
 }
   .preview.banner {
     padding: 20px 0;
+    display: block;
   }
     .preview.banner h3, .preview.banner p {
       display: inline-block;
