@@ -21,9 +21,6 @@ social:
 - name: Twitter
   url: http://twitter.com/BoringCode/
   icon: twitter
-- name: Forrst
-  url: https://forrst.com/people/BoringCode
-  icon: forrst
 - name: Stack Overflow
   url: http://stackoverflow.com/users/245909/boringcode
   icon: stackoverflow
