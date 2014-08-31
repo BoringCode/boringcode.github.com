@@ -1,3 +1,14 @@
+- name: Clear Skies
+  img: clearskies.png
+  slug: clearskies
+  url: >
+    [View App](http://clearskiesapp.com)
+  info: >
+    Clear Skies is an optimistic weather app for everyone. It is designed to work everywhere on any device while giving hyperlocal, accurate weather predictions using [Forecast.io](http://forecast.io).
+
+    I built this app so I could learn Angular.js and the Grunt taskrunner. Settings are stored locally and the app can maintain a giant location history list to help make finding locations easier. I employed responsive web design techniques to effeciently layout the app no matter what device you are using.
+
+    Check out the app, I think it is pretty awesome.
 - name: CSS Off 2013
   img: cssoff2013.png
   slug: cssoff2013
@@ -14,19 +25,6 @@
 
 
     To top the entry off I made sure it worked in modern browsers, as well as older versions of Internet Explorer. HTML5, CSS3, and jQuery (as well as some wonderful jQuery plugins) helped me achieve this design.
-- name: HTML5Notes
-  img: html5notes.png
-  slug: notesapp
-  url: >
-    [View Project](http://bradleyrosenfeld.com/HTML5Notes/) [Fork it on Github](http://github.com/BoringCode/HTML5Notes)
-  info: >
-    I made this app for the [December Mozilla Dev Derby](https://developer.mozilla.org/en-US/demos/devderby/2012/december) as a fun project.
-
-
-    This project is a really easy to use notetaking app that stores the notes in local storage. Better yet the app is responsive and can work offline making it perfect for use on smartphones.
-
-
-    To make it I mixed just the right amount of HTML5, Javascript, CSS3, and unicorn tears.
 - name: CWF Homeschool
   img: cwfhomeschool.png
   slug: cwfhomeschool
@@ -43,6 +41,19 @@
 
 
     To make it I mixed just the right amount of HTML5, Javascript, CSS3, PHP, MySQL, and Bootstrap (for the backend).
+- name: HTML5Notes
+  img: html5notes.png
+  slug: notesapp
+  url: >
+    [View Project](http://bradleyrosenfeld.com/HTML5Notes/) [Fork it on Github](http://github.com/BoringCode/HTML5Notes)
+  info: >
+    I made this app for the [December Mozilla Dev Derby](https://developer.mozilla.org/en-US/demos/devderby/2012/december) as a fun project.
+
+
+    This project is a really easy to use notetaking app that stores the notes in local storage. Better yet the app is responsive and can work offline making it perfect for use on smartphones.
+
+
+    To make it I mixed just the right amount of HTML5, Javascript, CSS3, and unicorn tears.
 - name: Do I Need An Umbrella?
   img: umbrella.png
   slug: umbrella
