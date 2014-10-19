@@ -2,7 +2,7 @@
   img: clearskies.png
   slug: clearskies
   url: >
-    [View App](http://clearskiesapp.com)
+    [View App](http://clearskiesapp.com) [View Code](https://github.com/BoringCode/ClearSkies)
   info: >
     Clear Skies is an optimistic weather app for everyone. It is designed to work everywhere on any device while giving hyperlocal, accurate weather predictions using [Forecast.io](http://forecast.io).
 
