@@ -1,8 +1,6 @@
 name: Bradley Rosenfeld
 markdown: redcarpet
-gems:
-  - jekyll-sitemap
-pygments: false
+highlighter: false
 permalink: /writing/:year/:month/:day/:title/
 paginate: 8
 paginate_path: writing/page/:num
