@@ -263,7 +263,7 @@ p {
 
 .hero {
   position: relative;
-  height: 150px;
+  height: 180px;
   padding: 2% 0;
   overflow: hidden;
   font-size: 1.1em;
@@ -295,12 +295,21 @@ p {
   .hero .bg {
     display: block;
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     top: 0;
     right: -0.25em;
     height: auto;
     min-height: 100%;
-    min-width: 102%; }
+    min-width: 102%;
+    opacity: 0.6; }
+  .hero .triangle-bg {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%; }
   .home .hero {
     font-size: 1.4em;
     height: 450px;
@@ -339,12 +348,11 @@ p {
     .home .hero h2 {
       line-height: 1em; }
     .home .hero span, .home .hero strong, .home .hero p {
-      background: rgba(255, 255, 255, 0.6);
-      padding: 0.01em 0.2em;
-      padding-left: 0;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 8px 1%;
       display: inline-block; }
-    .home .hero strong {
-      padding-bottom: 0.2em; }
+    .home .hero p {
+      font-size: 1.1em; }
 
 footer {
   padding: 40px 0;

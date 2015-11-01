@@ -10,7 +10,10 @@
         {% endif %}</h2>
         {{ page.info | markdownify }}
       </div>
-      <img src="{{site.baseurl}}/assets/header-images/{{ page.headerImg }}" class="bg" alt="Header background image">
+      <canvas class="triangle-bg" id="triangle-target"></canvas>
+      {% if page.headerImg %}
+        <img src="{{site.baseurl}}/assets/header-images/{{ page.headerImg }}" class="bg" alt="Header background image">
+      {% endif %}
     </header>
     {% endif %}
     <div class="content">

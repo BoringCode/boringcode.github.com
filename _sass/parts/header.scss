@@ -113,7 +113,7 @@
 
 .hero {
   position: relative;
-  height: 150px;
+  height: 180px;
   padding: 2% 0;
   overflow: hidden;
   font-size: 1.1em;
@@ -157,12 +157,23 @@
   .bg {
     display: block;
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     top: 0;
     right: -0.25em;
     height: auto;
     min-height: 100%;
     min-width: 102%;
+    opacity: 0.6;
+  }
+
+  .triangle-bg {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
   }
 
   .home & {
@@ -213,13 +224,12 @@
       line-height: 1em;
     }
     span, strong, p {
-      background: rgba(256,256,256,0.6);
-      padding: 0.01em 0.2em;
-      padding-left: 0;
+      background: rgba(256,256,256,0.5);
+      padding: 8px 1%;
       display: inline-block;
     }
-      strong {
-        padding-bottom: 0.2em;
+      p {
+        font-size: 1.1em;
       }
   }
 }
