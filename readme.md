@@ -13,10 +13,18 @@ $ gem install jekyll
 $ npm install
 ```
 
-Build stylesheet: `grunt build` (use `grunt watch` during development)
+Build stylesheet: `grunt build`
 
 
 Run: `jekyll serve`
+
+##Development
+
+Run: `grunt watch`
+
+Develop stylesheet in `_sass/`. Individual modules should go in `_sass/parts/` and page styles should go in `_sass/pages/`
+
+Run `grunt build` before deploying.
 
 ---------------------------------------
 
