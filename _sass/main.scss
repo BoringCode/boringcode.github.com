@@ -1,0 +1,20 @@
+/*
+ * main.sass
+ */
+
+/* Variables */
+$blue: #16577d;
+$red: #841118;
+
+/*Universal Styles */
+@import 'parts/reset';
+@import 'parts/elements';
+@import 'parts/fonts';
+@import 'parts/header';
+@import 'parts/footer';
+
+/* Page Parts */
+@import 'pages/home';
+@import 'pages/portfolio';
+@import 'pages/contact';
+@import 'pages/blog';

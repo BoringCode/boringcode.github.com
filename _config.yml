@@ -1,10 +1,15 @@
 name: Bradley Rosenfeld
 markdown: redcarpet
 highlighter: false
+exclude:
+  - node_modules
+  - Gruntfile.js
+  - package.json
+  - readme.md
 permalink: /writing/:year/:month/:day/:title/
 paginate: 8
 paginate_path: writing/page/:num
-base_url: http://bradleyrosenfeld.com
+baseurl: http://bradleyrosenfeld.com
 navigation:
 - text: Portfolio
   url: /portfolio/
@@ -34,5 +39,3 @@ social:
   url: https://vimeo.com/bradleyrosenfeld
   icon: vimeo
 - name: reddit
-  url: http://www.reddit.com/user/BoringCode/
-  icon: reddit

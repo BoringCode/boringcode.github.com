@@ -1,0 +1,27 @@
+footer {
+  padding: 40px 0;
+  background: #333333;
+  color: white;
+  text-align: center;
+  
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+  .icon-rocket {
+    display: block;
+    font-size: 4em;
+    color: #FFDF00;
+    transition: all 1100ms ease-in;
+    pointer-events: none;
+  }
+    .rocketry:hover .icon-rocket, .rocketry:focus .icon-rocket {
+      transform: rotate(10deg) translateY(-1200px);
+      color: $red;
+      font-size: 10em;
+    }
+
+  @media all and (max-width: 620px) {
+    padding: 20px 0;
+  }
+}

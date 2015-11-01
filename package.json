@@ -1,0 +1,23 @@
+{
+  "name": "bradleyrosenfeld.com",
+  "version": "1.0.0",
+  "description": "Personal website for Bradley Rosenfeld",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BoringCode/boringcode.github.com.git"
+  },
+  "author": "Bradley Rosenfeld",
+  "bugs": {
+    "url": "https://github.com/BoringCode/boringcode.github.com/issues"
+  },
+  "homepage": "http://bradleyrosenfeld.com",
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "cssnano": "^3.3.2",
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-postcss": "^0.7.0",
+    "grunt-sass": "^1.1.0",
+    "load-grunt-tasks": "^3.3.0"
+  }
+}

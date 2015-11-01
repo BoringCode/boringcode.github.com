@@ -1,7 +1,7 @@
 {% include header.html %}
   <section>
     {% if page.info %}
-    <header>
+    <header class="hero">
       <div class="wrap">
         <h2>{% if page.tagline %}
           {{ page.tagline }}
@@ -10,7 +10,7 @@
         {% endif %}</h2>
         {{ page.info | markdownify }}
       </div>
-      <img src="{{site.base_url}}/assets/header-images/{{ page.headerImg }}" class="bg" alt="Header background image">
+      <img src="{{site.baseurl}}/assets/header-images/{{ page.headerImg }}" class="bg" alt="Header background image">
     </header>
     {% endif %}
     <div class="content">

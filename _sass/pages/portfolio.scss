@@ -1,0 +1,84 @@
+.portfolio {
+  .firefox-addons {
+    &.wrap {
+      margin: 60px auto;
+      margin-top: 40px;
+    }
+    h2 {
+      padding-left: 110px;
+      height: 100px;
+      line-height: 100px;
+      background: url('/assets/firefox-logo.png') no-repeat;
+      @media only screen and (-webkit-min-device-pixel-ratio: 2),
+             only screen and (min--moz-device-pixel-ratio: 2),
+             only screen and (-o-min-device-pixel-ratio: 2/1),
+             only screen and (min-device-pixel-ratio: 2),
+             only screen and (min-resolution: 192dpi),
+             only screen and (min-resolution: 2dppx) {
+        background-image: url("../assets/firefox-logo-pixel-doubled.png");
+        background-size: 100px 104px;
+      }
+    }
+    p, ul {
+      margin-left: 110px;
+    }
+
+    @media all and (max-width: 590px) {
+      h2 {
+        font-size: 1.6em;
+      }
+    }
+  }
+}
+.find-more-github {
+  margin: 60px auto;
+  a:before {
+    font-size: 2.4em;
+    margin-right: 20px;
+  }
+}
+
+.portfolio-page-items {
+  margin-top: 40px;
+
+  li {
+    list-style: none;
+    margin-bottom: 40px;
+    padding: 40px 0;
+
+    /*Alternate images down the page*/
+    &:nth-child(2n) img {
+      float: right;
+    }
+  }
+
+  img {
+    width: 45%; 
+    height: auto;
+    float: left;
+    vertical-align: top;
+    margin-right: -0.25em;
+    border: 2px solid $red;
+  }
+
+  .info {
+    width: 55%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 3%;
+  }
+
+  .links {
+    margin-top: 0.6em;
+    margin-bottom: 1.2em;
+    border-bottom: 1px solid $red;
+    padding-bottom: 0.4em;
+    a {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

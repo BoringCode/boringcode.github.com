@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'FranchiseRegular';
+  src: url('../fonts/franchise-bold-webfont.eot');
+  src: url('../fonts/franchise-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/franchise-bold-webfont.woff') format('woff'),
+       url('../fonts/franchise-bold-webfont.ttf') format('truetype'),
+       url('../fonts/franchise-bold-webfont.svg#FranchiseRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'social-icons';
+  src: url('../fonts/social-icons.eot?-p6562k');
+  src: url('../fonts/social-icons.eot?#iefix-p6562k') format('embedded-opentype'),
+       url('../fonts/social-icons.woff?-p6562k') format('woff'),
+       url('../fonts/social-icons.ttf?-p6562k') format('truetype'),
+       url('../fonts/social-icons.svg?-p6562k#social-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon-file-pdf:before, .icon-link:before, .icon-arrow-down:before, .icon-rocket:before, .icon-comment:before, .icon-reddit:before, .icon-skype:before, .icon-twitter:before, .icon-stackoverflow:before, .icon-vimeo:before, .icon-googleplus:before, .icon-github:before, .icon-forrst:before, .icon-mail:before {
+  font-family: 'social-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  transition: color 200ms ease;
+}
+
+.icon-file-pdf {
+  &:before {
+    content: "\e600";
+  }
+}
+
+.icon-link {
+  &:before {
+    content: "\e601";
+  }
+}
+
+.icon-reddit {
+  &:hover {
+    color: #FF4500;
+  }
+  &:before {
+    content: "\e002";
+  }
+}
+.icon-twitter {
+  &:hover {
+    color: #00a0d1;
+  }
+  &:before {
+    content: "\e018";
+  }
+}
+.icon-stackoverflow {
+  &:hover {
+    color: #FE7A15;
+  }
+  &:before {
+    content: "\e10c";
+  }
+}
+.icon-vimeo {
+  &:hover {
+    color: #86c9ef;
+  }
+  &:before {
+    content: "\e00e";
+  }
+}
+.icon-googleplus {
+  &:hover {
+    color: #db4a39;
+  }
+  &:before {
+    content: "\e0a2";
+  }
+}
+.icon-github {
+  &:hover {
+    color: #4183c4;
+  }
+  &:before {
+    content: "\e0a8";
+  }
+}
+.icon-forrst {
+  &:hover {
+    color: #5b9a68;
+  }
+  &:before {
+    content: "\e000";
+  }
+}
+.icon-mail {
+  &:before {
+    content: "\e004";
+  }
+}
+.icon-rocket {
+  &:before {
+    content: "\e001";
+  }
+}
+
+.icon-skype:hover {
+  color: #00aff0;
+}
+.icon-comment:hover {
+  color: #fcd20b;
+}
