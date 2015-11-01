@@ -6,7 +6,15 @@ _I'm a [Web Developer](http://bradleyrosenfeld.com/portfolio/), Geek, [Human](ht
 
 ##Setup instructions
 
-Install jekyll: `gem install jekyll`
+Install dependancies: 
+
+```
+$ gem install jekyll
+$ npm install
+```
+
+Build stylesheet: `grunt build` (use `grunt watch` during development)
+
 
 Run: `jekyll serve`
 
