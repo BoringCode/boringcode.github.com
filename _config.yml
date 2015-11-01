@@ -5,6 +5,7 @@ exclude:
   - node_modules
   - bower_components
   - Gruntfile.js
+  - bower.json
   - package.json
   - readme.md
 permalink: /writing/:year/:month/:day/:title/
