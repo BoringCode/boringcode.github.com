@@ -11,6 +11,7 @@ Install dependancies:
 ```
 $ gem install jekyll
 $ npm install
+$ bower install
 ```
 
 Build stylesheet: `grunt build`
