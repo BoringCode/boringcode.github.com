@@ -228,20 +228,28 @@
       z-index: 2;
       white-space: pre-wrap;
       word-wrap: break-word;
-      padding: 2em 10%;
+      //padding: 0 10%;
+      background: none;
+      margin: 0;
+      overflow: hidden;
+      opacity: 0.2;
+      transform: rotate(-6deg);
     }
 
 
     h2 {
       line-height: 1em;
     }
-    span, strong, p {
-      background: rgba(256,256,256,0.5);
-      padding: 8px 1%;
-      display: inline-block;
-    }
-      p {
-        font-size: 1.1em;
+
+    .hero-info, h2 {
+      span, strong, p {
+        background: rgba(256,256,256,0.5);
+        padding: 8px 1%;
+        display: inline-block;
       }
+        p {
+          font-size: 1.1em;
+        }
+    }
   }
 }

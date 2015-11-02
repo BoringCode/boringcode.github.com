@@ -16,11 +16,32 @@ module.exports = function(grunt) {
                 dest: "js/build.js",
             }
         },
+        bowercopy: {
+            options: {
+                // Task-specific options go here
+            },
+            prismjs: {
+                src: 'prism/prism.js',
+                dest: '_js/',
+            },
+            prismcss: {
+                src: 'prism/themes/prism.css',
+                dest: 'css/',
+            },
+            trianglify: {
+                src: 'trianglify:main',
+                dest: '_js/',
+            }
+        },
         concat: {
             dist: {
-                src: ['_js/_bower.js', '_js/**/*.js'],
+                src: ['_js/prism.js', '_js/trianglify.min.js', '_js/**/*.js'],
                 dest: 'js/build.js',
             },
+            css: {
+                src: ['css/**/*.css'],
+                dest: 'css/main.css',
+            }
         },
         sass: {
             options: {
@@ -33,15 +54,6 @@ module.exports = function(grunt) {
                 }
             }
         },
-        bower_concat: {
-          all: {
-            dest: '_js/_bower.js',
-            cssDest: 'css/_bower.css',
-            bowerOptions: {
-              relative: false
-            }
-          }
-        },
         postcss: {
             options: {
                 processors: [
@@ -50,7 +62,7 @@ module.exports = function(grunt) {
                 ]
             },
             dist: {
-                src: 'css/*.css'
+                src: 'css/main.css'
             }
         },
         htmlmin: {
@@ -78,7 +90,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: '**/*.scss',
-                tasks: ['sass'],
+                tasks: ['sass', 'concat', 'postcss'],
                 options: {
                     livereload: true,
                 },
@@ -86,7 +98,7 @@ module.exports = function(grunt) {
         },
     });
      
-    grunt.registerTask('default', ['bower_concat', 'watch']);
-    grunt.registerTask('build', ['sass', 'postcss', 'bower_concat', 'concat', 'uglify', 'htmlmin']);
+    grunt.registerTask('default', ['build', 'watch']);
+    grunt.registerTask('build', ['sass', 'bowercopy', 'concat', 'postcss', 'uglify']);
 
 }

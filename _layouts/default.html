@@ -8,13 +8,13 @@
         {% else %}
           {{ page.title }}
         {% endif %}</h2>
-        {{ page.info | markdownify }}
+        <div class="hero-info">{{ page.info | markdownify }}</div>
       </div>
       <canvas class="triangle-bg" id="triangle-target"></canvas>
       {% if page.headerImg %}
         <img src="{{site.baseurl}}/assets/header-images/{{ page.headerImg }}" class="bg" alt="Header background image">
       {% else %}
-        <pre class="site-code"></pre>
+        <pre class="site-code language-html"></pre>
       {% endif %}
     </header>
     {% endif %}
