@@ -3,11 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>
-      {% if page.url == "/index.html" %}
-        {{ site.name }}, {{ page.title }}
-      {% else %}
-        {{ page.title }} &ndash; {{ site.name }}
-      {% endif %}
+      {% if page.url == "/index.html" %} {{ site.name }}, {{ page.title }} {% else %} {{ page.title }} &ndash; {{ site.name }} {% endif %}
     </title>
     <meta name="description" content="Bradley Rosenfeld is a professional web developer who believes that pixels are people too.">
     <meta name="viewport" content="width=device-width, initial-scale=1">

@@ -13,6 +13,8 @@
       <canvas class="triangle-bg" id="triangle-target"></canvas>
       {% if page.headerImg %}
         <img src="{{site.baseurl}}/assets/header-images/{{ page.headerImg }}" class="bg" alt="Header background image">
+      {% else %}
+        <pre class="site-code"></pre>
       {% endif %}
     </header>
     {% endif %}
