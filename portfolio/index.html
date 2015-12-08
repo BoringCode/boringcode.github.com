@@ -24,13 +24,16 @@ headerImg: portfolio.JPG
 {% endfor %}
 </ul>
 <div class="wrap firefox-addons">
-	<h2>Firefox Addons</h2>
-	<p>Over the years I have created numerous addons to help the Internet do things more efficiently.</p>
-	<ul class="list">
-		{% for item in site.data.firefoxaddons %}
-		<li><a href="{{item.url}}">{{item.name}}</a></li>
-		{% endfor %}
-	</ul>
+	<img src="{{site.baseurl}}/assets/firefox-logo.svg" class="img-logo">
+	<div class="addons-content">
+		<h2>Firefox Addons</h2>
+		<p>Over the years I have created numerous addons to help the Internet do things more efficiently.</p>
+		<ul class="list">
+			{% for item in site.data.firefoxaddons %}
+			<li><a href="{{item.url}}">{{item.name}}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
 </div>
 <h2 class="wrap find-more-github"><a href="http://github.com/BoringCode" class="icon-github">View more projects on GitHub</a></h2>
 

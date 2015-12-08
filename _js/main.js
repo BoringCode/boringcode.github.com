@@ -13,7 +13,7 @@
 	var pattern = Trianglify({
 		width: parent.offsetWidth,
 		height: parent.offsetHeight * 1.5,
-		cell_size: 45,
+		cell_size: 105,
 		//seed: document.title, 
 		//x_colors: ['#FFFFFF', '#16577d'],
 	});

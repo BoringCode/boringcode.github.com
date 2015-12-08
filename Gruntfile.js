@@ -39,7 +39,7 @@ module.exports = function(grunt) {
                 dest: 'js/build.js',
             },
             css: {
-                src: ['css/**/*.css'],
+                src: ['css/**/*.css', '!css/main.css'],
                 dest: 'css/main.css',
             }
         },

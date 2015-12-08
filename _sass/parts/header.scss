@@ -113,24 +113,17 @@
 
 .hero {
   position: relative;
-  height: 180px;
-  padding: 2% 0;
   overflow: hidden;
   font-size: 1.1em;
   color: white;
   text-shadow: 0px 1px 0px black;
 
   @media all and (max-width: 800px) {
-    padding: 3% 0;
-    height: 120px;
     .bg {
       right: -30%;
     }
   }
-  @media all and (max-width: 620px) {
-    padding: 5% 0;
-    height: 110px;
-    
+  @media all and (max-width: 620px) {    
     .bg {
       right: auto;
       left: -80%;
@@ -140,10 +133,12 @@
   .wrap {
     position: relative;
     z-index: 10;
+    padding: 2.4% 0;
   }
 
   h2 {
     font-size: 2.1em;
+    margin-bottom: 0;
     span {
       font-size: 0.8em;
     }
@@ -178,45 +173,16 @@
 
   .home & {
     font-size: 1.4em;
-    height: 450px;
-    padding: 8% 0;
     color: $red;
     text-shadow: none;
     color: $blue;
 
-    @media all and (min-width: 1600px) {
-      height: 600px;
-      padding: 10% 0;
+    .wrap {
+      padding: 8% 20px;
     }
-    @media all and (max-width: 1350px) {
-      height: 350px;
 
-      .bg {
-        top: -10%;
-        right: -1.8%;
-      }
-    }
-    @media all and (max-width: 1100px) {
-      .bg {
-        right: -7%;
-      }
-    }
-    @media all and (max-width: 890px) {
-      font-size: 98%;
-      height: 200px;
-
-      .bg {
-        top: -40%;
-        right: -30%;
-      }
-    }
-    @media all and (max-width: 620px) {
-      font-size: 90%;
-      height: 150px;
-    }
-    @media all and (max-width: 590px) {
-      padding: 3% 0;
-      font-size: 87%;
+    @media screen and (max-width: 600px) {
+      font-size: 100%;
     }
 
     .site-code {
@@ -244,7 +210,7 @@
     .hero-info, h2 {
       span, strong, p {
         background: rgba(256,256,256,0.5);
-        padding: 8px 1%;
+        padding: 10px 1.5%;
         display: inline-block;
       }
         p {

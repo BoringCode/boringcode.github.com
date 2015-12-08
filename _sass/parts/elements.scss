@@ -72,6 +72,7 @@ a {
   
 h2, h3, h4, h5, h6 {
   font-family: 'Bitter', serif;
+  margin-bottom: 0.5em;
 }
   h2 {
     font-size: 2em;
@@ -91,7 +92,11 @@ h2, h3, h4, h5, h6 {
 p {
   margin-bottom: 1em;
   line-height: 1.6em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
-.list li {
-  margin-left: 20px;
+.list {
+  list-style-position: inside;
 }

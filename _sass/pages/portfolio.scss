@@ -1,40 +1,52 @@
 .portfolio {
+  
+  .img-logo {
+    width: 6em;
+    height: auto;
+    margin-right: 2em;
+    margin-bottom: 1em;
+  }
+
   .firefox-addons {
+    .img-logo,
+    .addons-content {
+      display: inline-block;
+      vertical-align: top;
+    }
+    ul {
+      list-style-position: inside;
+    }
     &.wrap {
       margin: 60px auto;
       margin-top: 40px;
     }
-    h2 {
-      padding-left: 110px;
-      height: 100px;
-      line-height: 100px;
-      background: url('/assets/firefox-logo.png') no-repeat;
-      @media only screen and (-webkit-min-device-pixel-ratio: 2),
-             only screen and (min--moz-device-pixel-ratio: 2),
-             only screen and (-o-min-device-pixel-ratio: 2/1),
-             only screen and (min-device-pixel-ratio: 2),
-             only screen and (min-resolution: 192dpi),
-             only screen and (min-resolution: 2dppx) {
-        background-image: url("../assets/firefox-logo-pixel-doubled.png");
-        background-size: 100px 104px;
-      }
-    }
-    p, ul {
-      margin-left: 110px;
-    }
-
     @media all and (max-width: 590px) {
       h2 {
         font-size: 1.6em;
+      }
+      .img-logo {
+        display: none;
+      }
+      .addons-content {
+        padding: 0 3%;
       }
     }
   }
 }
 .find-more-github {
-  margin: 60px auto;
+  margin: 2.5em auto;
+
   a:before {
-    font-size: 2.4em;
-    margin-right: 20px;
+    font-size: 3em;
+    margin-right: 0.3em;
+  }
+
+  @media screen and (max-width: 590px) {
+    font-size: 1.5em;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 1em;
   }
 }
 
@@ -43,8 +55,8 @@
 
   li {
     list-style: none;
-    margin-bottom: 40px;
-    padding: 40px 0;
+    margin-bottom: 1.5em;
+    padding: 1em 0;
 
     /*Alternate images down the page*/
     &:nth-child(2n) img {
@@ -59,7 +71,9 @@
     vertical-align: top;
     margin-right: -0.25em;
     border: 2px solid $red;
+    margin-bottom: 1em;
   }
+
 
   .info {
     width: 55%;
@@ -79,6 +93,13 @@
     }
     p {
       margin-bottom: 0;
+    }
+  }
+
+  @media screen and (max-width: 590px) {
+    img, .info {
+      float: none;
+      width: 100%;
     }
   }
 }

@@ -67,7 +67,8 @@ a {
   text-decoration: underline; }
 
 h2, h3, h4, h5, h6 {
-  font-family: 'Bitter', serif; }
+  font-family: 'Bitter', serif;
+  margin-bottom: 0.5em; }
 
 h2 {
   font-size: 2em; }
@@ -87,9 +88,11 @@ h6 {
 p {
   margin-bottom: 1em;
   line-height: 1.6em; }
+  p:last-child {
+    margin-bottom: 0; }
 
-.list li {
-  margin-left: 20px; }
+.list {
+  list-style-position: inside; }
 
 @font-face {
   font-family: 'FranchiseRegular';
@@ -263,30 +266,24 @@ p {
 
 .hero {
   position: relative;
-  height: 180px;
-  padding: 2% 0;
   overflow: hidden;
   font-size: 1.1em;
   color: white;
   text-shadow: 0px 1px 0px black; }
   @media all and (max-width: 800px) {
-    .hero {
-      padding: 3% 0;
-      height: 120px; }
-      .hero .bg {
-        right: -30%; } }
+    .hero .bg {
+      right: -30%; } }
   @media all and (max-width: 620px) {
-    .hero {
-      padding: 5% 0;
-      height: 110px; }
-      .hero .bg {
-        right: auto;
-        left: -80%; } }
+    .hero .bg {
+      right: auto;
+      left: -80%; } }
   .hero .wrap {
     position: relative;
-    z-index: 10; }
+    z-index: 10;
+    padding: 2.4% 0; }
   .hero h2 {
-    font-size: 2.1em; }
+    font-size: 2.1em;
+    margin-bottom: 0; }
     .hero h2 span {
       font-size: 0.8em; }
   .hero a {
@@ -312,39 +309,14 @@ p {
     min-height: 100%; }
   .home .hero {
     font-size: 1.4em;
-    height: 450px;
-    padding: 8% 0;
     color: #841118;
     text-shadow: none;
     color: #16577d; }
-    @media all and (min-width: 1600px) {
+    .home .hero .wrap {
+      padding: 8% 20px; }
+    @media screen and (max-width: 600px) {
       .home .hero {
-        height: 600px;
-        padding: 10% 0; } }
-    @media all and (max-width: 1350px) {
-      .home .hero {
-        height: 350px; }
-        .home .hero .bg {
-          top: -10%;
-          right: -1.8%; } }
-    @media all and (max-width: 1100px) {
-      .home .hero .bg {
-        right: -7%; } }
-    @media all and (max-width: 890px) {
-      .home .hero {
-        font-size: 98%;
-        height: 200px; }
-        .home .hero .bg {
-          top: -40%;
-          right: -30%; } }
-    @media all and (max-width: 620px) {
-      .home .hero {
-        font-size: 90%;
-        height: 150px; } }
-    @media all and (max-width: 590px) {
-      .home .hero {
-        padding: 3% 0;
-        font-size: 87%; } }
+        font-size: 100%; } }
     .home .hero .site-code {
       position: absolute;
       top: 0;
@@ -363,7 +335,7 @@ p {
       line-height: 1em; }
     .home .hero .hero-info span, .home .hero .hero-info strong, .home .hero .hero-info p, .home .hero h2 span, .home .hero h2 strong, .home .hero h2 p {
       background: rgba(255, 255, 255, 0.5);
-      padding: 8px 1%;
+      padding: 10px 1.5%;
       display: inline-block; }
     .home .hero .hero-info p, .home .hero h2 p {
       font-size: 1.1em; }
@@ -380,7 +352,10 @@ footer {
     display: block;
     font-size: 4em;
     color: #FFDF00;
-    transition: all 1100ms ease-in;
+    transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* easeInOutBack */
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* easeInOutBack */
     pointer-events: none; }
   footer .rocketry:hover .icon-rocket, footer .rocketry:focus .icon-rocket {
     transform: rotate(10deg) translateY(-1200px);
@@ -433,7 +408,7 @@ footer {
     margin-bottom: 0.5em; }
   .preview.portfolio .portfolio-items a {
     text-decoration: none;
-    color: white; }
+    color: inherit; }
   .preview.portfolio .portfolio-items strong {
     display: block;
     margin-left: 2px; }
@@ -461,39 +436,50 @@ footer {
   .preview.blog .read-more {
     display: block; }
 
+.portfolio .img-logo {
+  width: 6em;
+  height: auto;
+  margin-right: 2em;
+  margin-bottom: 1em; }
+
+.portfolio .firefox-addons .img-logo,
+.portfolio .firefox-addons .addons-content {
+  display: inline-block;
+  vertical-align: top; }
+
+.portfolio .firefox-addons ul {
+  list-style-position: inside; }
+
 .portfolio .firefox-addons.wrap {
   margin: 60px auto;
   margin-top: 40px; }
 
-.portfolio .firefox-addons h2 {
-  padding-left: 110px;
-  height: 100px;
-  line-height: 100px;
-  background: url("/assets/firefox-logo.png") no-repeat; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    .portfolio .firefox-addons h2 {
-      background-image: url("../assets/firefox-logo-pixel-doubled.png");
-      background-size: 100px 104px; } }
-
-.portfolio .firefox-addons p, .portfolio .firefox-addons ul {
-  margin-left: 110px; }
-
 @media all and (max-width: 590px) {
   .portfolio .firefox-addons h2 {
-    font-size: 1.6em; } }
+    font-size: 1.6em; }
+  .portfolio .firefox-addons .img-logo {
+    display: none; }
+  .portfolio .firefox-addons .addons-content {
+    padding: 0 3%; } }
 
 .find-more-github {
-  margin: 60px auto; }
+  margin: 2.5em auto; }
   .find-more-github a:before {
-    font-size: 2.4em;
-    margin-right: 20px; }
+    font-size: 3em;
+    margin-right: 0.3em; }
+  @media screen and (max-width: 590px) {
+    .find-more-github {
+      font-size: 1.5em; } }
+  @media screen and (max-width: 400px) {
+    .find-more-github {
+      font-size: 1em; } }
 
 .portfolio-page-items {
   margin-top: 40px; }
   .portfolio-page-items li {
     list-style: none;
-    margin-bottom: 40px;
-    padding: 40px 0;
+    margin-bottom: 1.5em;
+    padding: 1em 0;
     /*Alternate images down the page*/ }
     .portfolio-page-items li:nth-child(2n) img {
       float: right; }
@@ -503,7 +489,8 @@ footer {
     float: left;
     vertical-align: top;
     margin-right: -0.25em;
-    border: 2px solid #841118; }
+    border: 2px solid #841118;
+    margin-bottom: 1em; }
   .portfolio-page-items .info {
     width: 55%;
     display: inline-block;
@@ -519,44 +506,47 @@ footer {
       margin-right: 20px; }
     .portfolio-page-items .links p {
       margin-bottom: 0; }
+  @media screen and (max-width: 590px) {
+    .portfolio-page-items img, .portfolio-page-items .info {
+      float: none;
+      width: 100%; } }
 
 .contact .content .wrap {
   margin-top: 40px;
   margin-bottom: 120px; }
 
-.contact .left-col {
+.contact .bio {
+  display: block;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 0.1em solid #841118; }
+  .contact .bio .image {
+    float: right;
+    max-width: 30%;
+    margin-left: 2em;
+    margin-bottom: 2em; }
+  .contact .bio:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.contact .col {
   display: inline-block;
   vertical-align: top;
-  width: 64%;
-  margin-right: 2%; }
-  .contact .left-col h3 {
-    margin-bottom: 0.5em; }
-  @media all and (max-width: 590px) {
-    .contact .left-col {
+  width: 50%;
+  margin-right: -0.25em;
+  margin-bottom: 1em; }
+  @media screen and (max-width: 580px) {
+    .contact .col {
       width: 100%;
-      margin: 0;
       display: block; } }
 
-.contact .right-col {
-  display: inline-block;
-  vertical-align: top;
-  width: 32%;
-  padding: 20px 0;
-  padding-left: 2%;
-  margin-left: 0.25em;
-  border-left: 2px solid #841118; }
-  .contact .right-col a {
-    font-size: 1.4em; }
-    .contact .right-col a:before {
-      margin-right: 5px; }
-  @media all and (max-width: 590px) {
-    .contact .right-col {
-      margin: 0;
-      width: 100%;
-      display: block;
-      padding-left: 0;
-      border-left: none;
-      border-top: 2px solid #841118; } }
+.contact .link {
+  font-size: 1.2em;
+  display: block; }
+  .contact .link:before {
+    display: inline-block;
+    margin-right: 0.5em; }
 
 .contact .follow li {
   font-size: 1.8em;

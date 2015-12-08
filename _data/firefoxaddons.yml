@@ -4,11 +4,5 @@
   url: https://addons.mozilla.org/en-US/firefox/addon/translate-this/
 - name: User Agent Quick Switch
   url: https://addons.mozilla.org/en-US/firefox/addon/user-agent-quick-switch/
-- name: Copy goo.gl URL
-  url: https://addons.mozilla.org/en-US/firefox/addon/copy-googl-url/
-- name: Open in Google Docs Viewer
-  url: https://addons.mozilla.org/en-US/firefox/addon/open-doc-in-google-docs-viewer/
 - name: Copy Plain Text - Jetpack
   url: https://addons.mozilla.org/en-US/firefox/addon/copy-plain-text-jetpack/
-- name: Fireballed
-  url: https://addons.mozilla.org/en-US/firefox/addon/fireballed/
