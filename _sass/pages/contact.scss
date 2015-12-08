@@ -12,9 +12,13 @@
 
     .image {
       float: right;
-      max-width:30%;
+      max-width: 30%;
       margin-left: 2em;
       margin-bottom: 2em;
+
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
     }
 
     &:after {
