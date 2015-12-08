@@ -1,6 +1,5 @@
 name: Bradley Rosenfeld
 markdown: redcarpet
-highlighter: false
 exclude:
   - node_modules
   - bower_components
