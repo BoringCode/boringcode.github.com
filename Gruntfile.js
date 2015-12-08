@@ -86,19 +86,30 @@ module.exports = function(grunt) {
         watch: {
             js: {
                 files: "_js/**/*.js",
-                tasks: ['concat'],
+                tasks: ['newer:concat'],
             },
             css: {
                 files: '**/*.scss',
-                tasks: ['sass', 'concat', 'postcss'],
+                tasks: ['newer:sass', 'newer:concat', 'newer:postcss'],
                 options: {
                     livereload: true,
                 },
             },
+            tasks: ['newer:imagemin']
         },
+        imagemin: {                          // Task 
+            dynamic: {                         // Another target 
+                files: [{
+                    expand: true,                  // Enable dynamic expansion 
+                    cwd: '_assets/',                   // Src matches are relative to this path 
+                    src: ['**/*.{png,jpg,gif,svg}'],   // Actual patterns to match 
+                    dest: 'assets/'                  // Destination path prefix 
+                }]
+            }
+        }
     });
      
     grunt.registerTask('default', ['build', 'watch']);
-    grunt.registerTask('build', ['sass', 'bowercopy', 'concat', 'postcss', 'uglify']);
+    grunt.registerTask('build', ['sass', 'bowercopy', 'concat', 'postcss', 'uglify', 'imagemin']);
 
 }
