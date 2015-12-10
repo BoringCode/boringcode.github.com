@@ -11,22 +11,19 @@
 
 
     Check out the app, I think it is pretty awesome.
-- name: CSS Off 2013
-  img: cssoff2013.png
-  slug: cssoff2013
+- name: HTML5Notes
+  img: html5notes.png
+  slug: notesapp
   url: >
-   [View Entry](http://bradleyrosenfeld.com/CSSOff2013) [View Code](https://github.com/BoringCode/CSSOff2013)
+    [View Project](http://bradleyrosenfeld.com/HTML5Notes/) [Fork it on Github](http://github.com/BoringCode/HTML5Notes)
   info: >
-    [Unmatched Style](http://ums.sc/cssoff/) put out a big challenge this year. My task was to recreate a (crazy) design while pushing the browser to its limits.
+    I made this app for the [December Mozilla Dev Derby](https://developer.mozilla.org/en-US/demos/devderby/2012/december) as a fun project.
 
 
-    This challenge was difficult for a variety of reasons, one of which being the layout. The layout was a fairly basic one column website with some twists. Because I still wanted to write HTML semantically, I sometimes had to push CSS pretty far to achieve some of the subtle layout features. For example the water overflowing the "Overflow" header. Or trying to create the bullet list in such a way so it was readable even when using a screen reader.
+    This project is a really easy to use notetaking app that stores the notes in local storage. Better yet the app is responsive and can work offline making it perfect for use on smartphones.
 
 
-    Did I mention that one of the requirements for entries was responsiveness? I took a desktop first approach as I knew what the design looked like for a normal sized device. Then I created breakpoints as I resized the browser to smaller widths. This created a great experience not just for desktop users, but also people using their smartphones or tablets.
-
-
-    To top the entry off I made sure it worked in modern browsers, as well as older versions of Internet Explorer. HTML5, CSS3, and jQuery (as well as some wonderful jQuery plugins) helped me achieve this design.
+    To make it I mixed just the right amount of HTML, Javascript, and CSS.
 - name: CWF Homeschool
   img: cwfhomeschool.png
   slug: cwfhomeschool
@@ -43,19 +40,22 @@
 
 
     To make it I mixed just the right amount of HTML5, Javascript, CSS3, PHP, MySQL, and Bootstrap (for the backend).
-- name: HTML5Notes
-  img: html5notes.png
-  slug: notesapp
+- name: CSS Off 2013
+  img: cssoff2013.png
+  slug: cssoff2013
   url: >
-    [View Project](http://bradleyrosenfeld.com/HTML5Notes/) [Fork it on Github](http://github.com/BoringCode/HTML5Notes)
+   [View Entry](http://bradleyrosenfeld.com/CSSOff2013) [View Code](https://github.com/BoringCode/CSSOff2013)
   info: >
-    I made this app for the [December Mozilla Dev Derby](https://developer.mozilla.org/en-US/demos/devderby/2012/december) as a fun project.
+    [Unmatched Style](http://ums.sc/cssoff/) put out a big challenge this year. My task was to recreate a (crazy) design while pushing the browser to its limits.
 
 
-    This project is a really easy to use notetaking app that stores the notes in local storage. Better yet the app is responsive and can work offline making it perfect for use on smartphones.
+    This challenge was difficult for a variety of reasons, one of which being the layout. The layout was a fairly basic one column website with some twists. Because I still wanted to write HTML semantically, I sometimes had to push CSS pretty far to achieve some of the subtle layout features. For example the water overflowing the "Overflow" header. Or trying to create the bullet list in such a way so it was readable even when using a screen reader.
 
 
-    To make it I mixed just the right amount of HTML5, Javascript, CSS3, and unicorn tears.
+    Did I mention that one of the requirements for entries was responsiveness? I took a desktop first approach as I knew what the design looked like for a normal sized device. Then I created breakpoints as I resized the browser to smaller widths. This created a great experience not just for desktop users, but also people using their smartphones or tablets.
+
+
+    To top the entry off I made sure it worked in modern browsers, as well as older versions of Internet Explorer. HTML5, CSS3, and jQuery (as well as some wonderful jQuery plugins) helped me achieve this design.
 - name: Do I Need An Umbrella?
   img: umbrella.png
   slug: umbrella
