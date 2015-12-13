@@ -45,13 +45,14 @@
     font-size: 1.2em;
     display: block;
     &:before {
+      font-size: 1.2em;
       display: inline-block;
       margin-right: 0.5em;
     }
   }
 
   .follow li {
-    font-size: 1.8em;
+    font-size: 2em;
     list-style: none;
     display: inline-block;
     position: relative;

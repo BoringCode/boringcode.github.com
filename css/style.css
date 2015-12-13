@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  * main.sass
  */
@@ -103,83 +104,80 @@ p {
 
 @font-face {
   font-family: 'social-icons';
-  src: url("../fonts/social-icons.eot?-p6562k");
-  src: url("../fonts/social-icons.eot?#iefix-p6562k") format("embedded-opentype"), url("../fonts/social-icons.woff?-p6562k") format("woff"), url("../fonts/social-icons.ttf?-p6562k") format("truetype"), url("../fonts/social-icons.svg?-p6562k#social-icons") format("svg");
+  src: url("../fonts/social-icons.eot?lpta5a");
+  src: url("../fonts/social-icons.eot?lpta5a#iefix") format("embedded-opentype"), url("../fonts/social-icons.ttf?lpta5a") format("truetype"), url("../fonts/social-icons.woff?lpta5a") format("woff"), url("../fonts/social-icons.svg?lpta5a#social-icons") format("svg");
   font-weight: normal;
   font-style: normal; }
 
-.icon-file-pdf:before, .icon-link:before, .icon-arrow-down:before, .icon-rocket:before, .icon-comment:before, .icon-reddit:before, .icon-skype:before, .icon-twitter:before, .icon-stackoverflow:before, .icon-vimeo:before, .icon-googleplus:before, .icon-github:before, .icon-forrst:before, .icon-mail:before {
-  font-family: 'social-icons';
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'social-icons' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   display: inline-block;
   vertical-align: middle;
   transition: color 200ms ease; }
 
+.icon-linkedin:before {
+  content: ""; }
+
+.icon-linkedin:hover {
+  color: #0077b5; }
+
 .icon-file-pdf:before {
-  content: "\e600"; }
+  content: ""; }
 
 .icon-link:before {
-  content: "\e601"; }
+  content: ""; }
 
 .icon-reddit:hover {
   color: #FF4500; }
 
 .icon-reddit:before {
-  content: "\e002"; }
+  content: ""; }
 
 .icon-twitter:hover {
   color: #00a0d1; }
 
 .icon-twitter:before {
-  content: "\e018"; }
+  content: ""; }
 
 .icon-stackoverflow:hover {
   color: #FE7A15; }
 
 .icon-stackoverflow:before {
-  content: "\e10c"; }
+  content: ""; }
 
 .icon-vimeo:hover {
   color: #86c9ef; }
 
 .icon-vimeo:before {
-  content: "\e00e"; }
+  content: ""; }
 
 .icon-googleplus:hover {
   color: #db4a39; }
 
 .icon-googleplus:before {
-  content: "\e0a2"; }
+  content: ""; }
 
 .icon-github:hover {
   color: #4183c4; }
 
 .icon-github:before {
-  content: "\e0a8"; }
-
-.icon-forrst:hover {
-  color: #5b9a68; }
-
-.icon-forrst:before {
-  content: "\e000"; }
+  content: ""; }
 
 .icon-mail:before {
   content: "\e004"; }
 
 .icon-rocket:before {
-  content: "\e001"; }
-
-.icon-skype:hover {
-  color: #00aff0; }
-
-.icon-comment:hover {
-  color: #fcd20b; }
+  content: ""; }
 
 .site-header {
   border-bottom: 3px solid #841118;
@@ -556,11 +554,12 @@ footer {
   font-size: 1.2em;
   display: block; }
   .contact .link:before {
+    font-size: 1.2em;
     display: inline-block;
     margin-right: 0.5em; }
 
 .contact .follow li {
-  font-size: 1.8em;
+  font-size: 2em;
   list-style: none;
   display: inline-block;
   position: relative;

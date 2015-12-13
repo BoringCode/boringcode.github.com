@@ -30,6 +30,9 @@ social:
 - name: Stack Overflow
   url: http://stackoverflow.com/users/245909/boringcode
   icon: stackoverflow
+- name: LinkedIn
+  url: https://www.linkedin.com/in/bradleyrosenfeld
+  icon: linkedin
 - name: Google+
   url: https://plus.google.com/u/0/103911801470461386422/
   icon: googleplus
